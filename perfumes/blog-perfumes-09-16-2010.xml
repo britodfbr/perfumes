@@ -1,0 +1,1404 @@
+<?xml version='1.0' encoding='UTF-8'?><?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:georss='http://www.georss.org/georss' xmlns:gd='http://schemas.google.com/g/2005' xmlns:thr='http://purl.org/syndication/thread/1.0'><id>tag:blogger.com,1999:blog-2934402295027387135.archive</id><updated>2010-09-16T06:59:27.535-03:00</updated><title type='text'>Perfumes</title><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://rbrito1978.blogspot.com/feeds/archive'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/archive'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/archive'/><link rel='alternate' type='text/html' href='http://rbrito1978.blogspot.com/'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author><generator version='7.00' uri='http://www.blogger.com'>Blogger</generator><entry><id>tag:blogger.com,1999:blog-2934402295027387135.layout</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#template'/><title type='text'>Modelo: Perfumes</title><content type='text'>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
+  &lt;head&gt;
+    &lt;meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/&gt;
+    &lt;b:if cond='data:blog.isMobile'&gt;
+      &lt;meta content='width=device-width,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;
+    &lt;b:else/&gt;
+      &lt;meta content='width=1100' name='viewport'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:include data='blog' name='all-head-content'/&gt;
+    &lt;title&gt;&lt;data:blog.pageTitle/&gt;&lt;/title&gt;
+
+    &lt;b:skin&gt;&lt;![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Travel
+Designer: Sookhee Lee
+URL:      www.plyfly.net
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   &lt;Variable name="keycolor" description="Main Color" type="color" default="#539bcd" value="#744807"/&gt;
+
+   &lt;Group description="Page Text" selector=".content-inner"&gt;
+     &lt;Variable name="body.font" description="Font" type="font"
+         default="normal normal 13px 'Trebuchet MS',Trebuchet,sans-serif" value="normal normal 13px 'Trebuchet MS',Trebuchet,sans-serif"/&gt;
+     &lt;Variable name="body.text.color" description="Text Color" type="color" default="#bbbbbb" value="#b4b4b4"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Backgrounds" selector=".body-fauxcolumns-outer"&gt;
+     &lt;Variable name="body.background.color" description="Outer Background" type="color" default="#539bcd" value="#c79140"/&gt;
+     &lt;Variable name="content.background.color" description="Main Background" type="color" default="transparent" value="transparent"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Links" selector=".main-outer"&gt;
+     &lt;Variable name="link.color" description="Link Color" type="color" default="#ff9900" value="#002fdf"/&gt;
+     &lt;Variable name="link.visited.color" description="Visited Color" type="color" default="#b87209" value="#051d73"/&gt;
+     &lt;Variable name="link.hover.color" description="Hover Color" type="color" default="#ff9900" value="#002fdf"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Blog Title" selector=".header"&gt;
+     &lt;Variable name="header.font" description="Font" type="font"
+         default="normal normal 60px 'Trebuchet MS',Trebuchet,sans-serif" value="normal normal 60px 'Trebuchet MS',Trebuchet,sans-serif"/&gt;
+     &lt;Variable name="header.text.color" description="Text Color" type="color" default="#ffffff"  value="#ffffff"/&gt;
+     &lt;Variable name="description.text.color" description="Description Color" type="color"
+         default="$(body.text.color)"  value="#bbbbbb"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Tabs Text" selector=".tabs-outer .PageList"&gt;
+     &lt;Variable name="tabs.font" description="Font" type="font"
+         default="normal bold 16px 'Trebuchet MS',Trebuchet,sans-serif" value="normal bold 16px 'Trebuchet MS',Trebuchet,sans-serif"/&gt;
+     &lt;Variable name="tabs.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/&gt;
+     &lt;Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#ffffff" value="#ffffff"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Tabs Background" selector=".tabs-outer .PageList"&gt;
+     &lt;Variable name="tabs.background.color" description="Background Color" type="color" default="transparent" value="transparent"/&gt;
+     &lt;Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="transparent" value="transparent"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Date Header" selector=".date-header"&gt;
+     &lt;Variable name="date.font" description="Font" type="font"
+         default="normal normal 14px 'Trebuchet MS',Trebuchet,sans-serif" value="normal normal 14px 'Trebuchet MS',Trebuchet,sans-serif"/&gt;
+     &lt;Variable name="date.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#bbbbbb"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Post Title" selector=".post-title"&gt;
+     &lt;Variable name="post.title.font" description="Font" type="font"
+         default="normal bold 20px 'Trebuchet MS',Trebuchet,sans-serif" value="normal bold 20px 'Trebuchet MS',Trebuchet,sans-serif"/&gt;
+     &lt;Variable name="post.title.text.color" description="Text Color" type="color"
+         default="#ffffff" value="#ffffff"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Post Background" selector=".column-center-inner"&gt;
+     &lt;Variable name="post.background.color" description="Background Color" type="color"
+         default="transparent" value="transparent"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Gadget Title Color" selector=".sidebar .widget"&gt;
+     &lt;Variable name="widget.title.font" description="Font" type="font"
+        default="normal bold 14px 'Trebuchet MS',Trebuchet,sans-serif" value="normal bold 14px 'Trebuchet MS',Trebuchet,sans-serif"/&gt;
+     &lt;Variable name="widget.title.text.color" description="Title Color" type="color" default="#ffffff" value="#ffffff"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Gadget Text" selector=".sidebar .widget"&gt;
+     &lt;Variable name="widget.font" description="Font" type="font"
+        default="$(body.font)" value="$(body.font)"/&gt;
+     &lt;Variable name="widget.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#bbbbbb"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Gadget Links" selector=".sidebar .widget"&gt;
+     &lt;Variable name="widget.link.color" description="Link Color" type="color" default="$(body.text.color)" value="#bbbbbb"/&gt;
+     &lt;Variable name="widget.link.visited.color" description="Visited Color" type="color" default="$(link.visited.color)" value="#b87209"/&gt;
+     &lt;Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#ffffff" value="#ffffff"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Sidebar Background" selector=".column-left-inner .column-right-inner"&gt;
+     &lt;Variable name="widget.outer.background.color" description="Background Color" type="color" default="transparent"  value="transparent"/&gt;
+     &lt;Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="transparent"  value="transparent"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="$(color) none repeat-x scroll top center" value="#744807 url(http://themes.googleusercontent.com/image?id=0BwVBOzw_-hbMNGMyYjJhNWItY2U2My00NmQ0LWEzYWMtZTMzYWMwMmYxYmI1) repeat fixed top center /* Credit: Brasil2 (http://www.istockphoto.com/googleimages.php?id=2295796&amp;platform=blogger) */"/&gt;
+   &lt;Variable name="content.background" description="Content Background" type="background"
+       color="$(content.background.color)" default="$(color) none repeat scroll top center" value="transparent url(http://blogblog.com/1kt/travel/bg_black_70.png) repeat scroll top left"/&gt;
+   &lt;Variable name="comments.background" description="Comments Background" type="background"
+       default="#cccccc none repeat scroll top center" value="transparent url(http://blogblog.com/1kt/travel/bg_black_50.png) repeat scroll top center"/&gt;
+
+   &lt;Variable name="content.imageBorder.top.space" description="Content Image Border Top Space" type="length" default="0" value="0"/&gt;
+   &lt;Variable name="content.imageBorder.top" description="Content Image Border Top" type="url" default="none" value="none"/&gt;
+
+   &lt;Variable name="content.margin" description="Content Margin Top" type="length" default="20px" value="20px"/&gt;
+   &lt;Variable name="content.padding" description="Content Padding" type="length" default="20px" value="20px"/&gt;
+   &lt;Variable name="content.posts.padding" description="Posts Content Padding" type="length" default="10px" value="10px"/&gt;
+
+   &lt;Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+       default="url(http://www.blogblog.com/1kt/travel/bg_black_50.png)" value="url(http://www.blogblog.com/1kt/travel/bg_black_50.png)"/&gt;
+   &lt;Variable name="tabs.selected.background.gradient" description="Tabs Selected Background Gradient" type="url"
+       default="url(http://www.blogblog.com/1kt/travel/bg_black_50.png)" value="url(http://www.blogblog.com/1kt/travel/bg_black_50.png)"/&gt;
+   &lt;Variable name="widget.outer.background.gradient" description="Sidebar Gradient" type="url"
+       default="url(http://www.blogblog.com/1kt/travel/bg_black_50.png)" value="url(http://www.blogblog.com/1kt/travel/bg_black_50.png)"/&gt;
+   &lt;Variable name="footer.background.gradient" description="Footer Background Gradient" type="url" default="none" value="none"/&gt;
+*/
+
+/* Content
+----------------------------------------------- */
+body {
+  font: $(body.font);
+  color: $(body.text.color);
+  background: $(body.background);
+}
+
+html body .region-inner {
+  min-width: 0;
+  max-width: 100%;
+  width: auto;
+}
+
+a:link {
+  text-decoration:none;
+  color: $(link.color);
+}
+
+a:visited {
+  text-decoration:none;
+  color: $(link.visited.color);
+}
+
+a:hover {
+  text-decoration:underline;
+  color: $(link.hover.color);
+}
+
+.content-outer .content-cap-top {
+  height: $(content.imageBorder.top.space);
+  background: transparent $(content.imageBorder.top) repeat-x scroll top center;
+}
+
+.content-outer {
+  margin: 0 auto;
+  padding-top: $(content.margin);
+}
+
+.content-inner {
+  background: $(content.background);
+  background-position: left -$(content.imageBorder.top.space);
+  background-color: $(content.background.color);
+  padding: $(content.padding);
+}
+
+.main-inner .date-outer {
+  margin-bottom: 2em;
+}
+
+/* Header
+----------------------------------------------- */
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Header h1 {
+  font: $(header.font);
+  color: $(header.text.color);
+}
+
+.Header h1 a {
+  color: $(header.text.color);
+}
+
+.Header .description {
+  font-size: 130%;
+}
+
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+.tabs-inner .section {
+  margin: 0;
+}
+
+.tabs-inner .widget ul {
+  padding: 0;
+  background: $(tabs.background.color) $(tabs.background.gradient) repeat scroll top center;
+}
+
+.tabs-inner .widget li {
+  border: none;
+}
+
+.tabs-inner .widget li a {
+  display: inline-block;
+  padding: 1em 1.5em;
+  color: $(tabs.text.color);
+  font: $(tabs.font);
+}
+
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+  position: relative;
+  z-index: 1;
+  background: $(tabs.selected.background.color) $(tabs.selected.background.gradient) repeat scroll top center;
+  color: $(tabs.selected.text.color);
+
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+  font: $(widget.title.font);
+  color: $(widget.title.text.color);
+}
+
+.main-inner h2.date-header {
+  font: $(date.font);
+  color: $(date.text.color);
+}
+
+.footer-inner .widget h2,
+.sidebar .widget h2 {
+  padding-bottom: .5em;
+}
+
+/* Main
+----------------------------------------------- */
+
+.main-inner {
+  padding: $(content.padding) 0;
+}
+
+.main-inner .column-center-inner {
+  padding: $(content.posts.padding) 0;
+}
+
+.main-inner .column-center-inner .section {
+  margin: 0 $(content.posts.padding);
+}
+
+.main-inner .column-right-inner {
+  margin-left: $(content.padding);
+}
+
+.main-inner .fauxcolumn-right-outer .fauxcolumn-inner {
+  margin-left: $(content.padding);
+  background: $(widget.outer.background.color) $(widget.outer.background.gradient) repeat scroll top left;
+}
+
+.main-inner .column-left-inner {
+  margin-right: $(content.padding);
+}
+
+.main-inner .fauxcolumn-left-outer .fauxcolumn-inner {
+  margin-right: $(content.padding);
+  background: $(widget.outer.background.color) $(widget.outer.background.gradient) repeat scroll top left;
+}
+
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+  padding: 15px 0;
+}
+
+
+
+/* Posts
+----------------------------------------------- */
+h3.post-title {
+  margin-top: 20px;
+}
+
+h3.post-title a {
+  font: $(post.title.font);
+  color: $(post.title.text.color);
+}
+
+h3.post-title a:hover {
+  text-decoration: underline;
+}
+
+.main-inner .column-center-outer {
+  background-color: $(post.background.color);
+}
+
+.post-body {
+  line-height: 1.4;
+  position: relative;
+}
+
+.post-header {
+  margin: 0 0 1em;
+
+  line-height: 1.6;
+}
+
+.post-footer {
+  margin: .5em 0;
+  line-height: 1.6;
+}
+
+#blog-pager {
+  font-size: 140%;
+}
+
+#comments {
+  background: $(comments.background);
+  padding: 15px;
+}
+
+#comments .comment-author {
+  padding-top: 1.5em;
+}
+
+#comments h4,
+#comments .comment-author a,
+#comments .comment-timestamp a {
+  color: $(post.title.text.color);
+}
+
+#comments .comment-author:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.avatar-image-container {
+  margin: .2em 0 0;
+}
+
+/* Widgets
+----------------------------------------------- */
+.sidebar .widget {
+  border-bottom: 2px solid $(widget.border.bevel.color);
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+
+.sidebar .widget:first-child {
+  margin-top: 0;
+}
+
+.sidebar .widget:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer-inner .widget,
+.sidebar .widget {
+  font: $(widget.font);
+  color: $(widget.text.color);
+}
+
+
+.sidebar .widget a:link {
+  color: $(widget.link.color);
+  text-decoration: none;
+}
+
+.sidebar .widget a:visited {
+  color: $(widget.link.visited.color);
+}
+
+.sidebar .widget a:hover {
+  color: $(widget.link.color);
+  text-decoration: underline;
+}
+
+.footer-inner .widget a:link {
+  color: $(link.color);
+  text-decoration: none;
+}
+
+.footer-inner .widget a:visited {
+  color: $(link.visited.color);
+}
+
+.footer-inner .widget a:hover {
+  color: $(link.color);
+  text-decoration: underline;
+}
+
+.widget .zippy {
+  color: $(widget.alternate.text.color);
+}
+
+.footer-inner {
+  background: transparent $(footer.background.gradient) repeat scroll top center;
+}
+
+
+
+
+
+]]&gt;&lt;/b:skin&gt;
+
+    &lt;b:template-skin&gt;
+      &lt;b:variable default='930px' name='content.width' type='length'/&gt;
+      &lt;b:variable default='0' name='main.column.left.width' type='length'/&gt;
+      &lt;b:variable default='360px' name='main.column.right.width' type='length'/&gt;
+
+      &lt;![CDATA[
+      body {
+        min-width: $(content.width);
+      }
+
+      .content-outer, .content-fauxcolumn-outer, .region-inner {
+        min-width: $(content.width);
+        max-width: $(content.width);
+        _width: $(content.width);
+      }
+
+      .main-inner .columns {
+        padding-left: $(main.column.left.width);
+        padding-right: $(main.column.right.width);
+      }
+
+      .main-inner .fauxcolumn-center-outer {
+        left: $(main.column.left.width);
+        right: $(main.column.right.width);
+        /* IE6 does not respect left and right together */
+        _width: expression(this.parentNode.offsetWidth -
+            parseInt("$(main.column.left.width)") -
+            parseInt("$(main.column.right.width)") + 'px');
+      }
+
+      .main-inner .fauxcolumn-left-outer {
+        width: $(main.column.left.width);
+      }
+
+      .main-inner .fauxcolumn-right-outer {
+        width: $(main.column.right.width);
+      }
+
+      .main-inner .column-left-outer {
+        width: $(main.column.left.width);
+        right: 100%;
+        margin-left: -$(main.column.left.width);
+      }
+
+      .main-inner .column-right-outer {
+        width: $(main.column.right.width);
+        margin-right: -$(main.column.right.width);
+      }
+
+      #layout {
+        min-width: 0;
+      }
+
+      #layout .content-outer {
+        min-width: 0;
+        width: 800px;
+      }
+
+      #layout .region-inner {
+        min-width: 0;
+        width: auto;
+      }
+      ]]&gt;
+    &lt;/b:template-skin&gt;
+  &lt;/head&gt;
+
+  &lt;body expr:class='&amp;quot;loading&amp;quot; + data:blog.mobileClass'&gt;
+  &lt;div class='body-fauxcolumns'&gt;
+    &lt;div class='fauxcolumn-outer body-fauxcolumn-outer'&gt;
+    &lt;div class='cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left'&gt;
+    &lt;div class='fauxborder-right'/&gt;
+    &lt;div class='fauxcolumn-inner'&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class='content'&gt;
+  &lt;div class='content-fauxcolumns'&gt;
+    &lt;div class='fauxcolumn-outer content-fauxcolumn-outer'&gt;
+    &lt;div class='cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left'&gt;
+    &lt;div class='fauxborder-right'/&gt;
+    &lt;div class='fauxcolumn-inner'&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class='content-outer'&gt;
+  &lt;div class='content-cap-top cap-top'&gt;
+    &lt;div class='cap-left'/&gt;
+    &lt;div class='cap-right'/&gt;
+  &lt;/div&gt;
+  &lt;div class='fauxborder-left content-fauxborder-left'&gt;
+  &lt;div class='fauxborder-right content-fauxborder-right'/&gt;
+  &lt;div class='content-inner'&gt;
+
+    &lt;header&gt;
+    &lt;div class='header-outer'&gt;
+    &lt;div class='header-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left header-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right header-fauxborder-right'/&gt;
+    &lt;div class='region-inner header-inner'&gt;
+      &lt;b:section class='header' id='header' maxwidgets='1' showaddelement='no'&gt;
+&lt;b:widget id='Header1' locked='true' title='Perfumes (Cabeçalho)' type='Header'&gt;
+&lt;b:includable id='main'&gt;
+
+  &lt;b:if cond='data:useImage'&gt;
+    &lt;b:if cond='data:imagePlacement == &amp;quot;BEHIND&amp;quot;'&gt;
+      &lt;!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      --&gt;
+      &lt;b:if cond='data:mobile'&gt;
+          &lt;div id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;b:else/&gt;
+          &lt;div expr:style='&amp;quot;background-image: url(\&amp;quot;&amp;quot; + data:sourceUrl + &amp;quot;\&amp;quot;); &amp;quot;                        + &amp;quot;background-position: &amp;quot;                        + data:backgroundPositionStyleStr + &amp;quot;; &amp;quot;                        + data:widthStyleStr                        + &amp;quot;min-height: &amp;quot; + data:height                        + &amp;quot;_height: &amp;quot; + data:height                        + &amp;quot;background-repeat: no-repeat; &amp;quot;' id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;/b:if&gt;
+    &lt;b:else/&gt;
+      &lt;!--Show the image only--&gt;
+      &lt;div id='header-inner'&gt;
+        &lt;a expr:href='data:blog.homepageUrl' style='display: block'&gt;
+          &lt;img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &amp;quot;_headerimg&amp;quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/&gt;
+        &lt;/a&gt;
+        &lt;!--Show the description--&gt;
+        &lt;b:if cond='data:imagePlacement == &amp;quot;BEFORE_DESCRIPTION&amp;quot;'&gt;
+          &lt;b:include name='description'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;b:else/&gt;
+    &lt;!--No header image --&gt;
+    &lt;div id='header-inner'&gt;
+      &lt;div class='titlewrapper'&gt;
+        &lt;h1 class='title'&gt;
+          &lt;b:include name='title'/&gt;
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;b:include name='description'/&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='title'&gt;
+  &lt;b:if cond='data:blog.url == data:blog.homepageUrl'&gt;
+    &lt;data:title/&gt;
+  &lt;b:else/&gt;
+    &lt;a expr:href='data:blog.homepageUrl'&gt;&lt;data:title/&gt;&lt;/a&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='description'&gt;
+  &lt;div class='descriptionwrapper'&gt;
+    &lt;p class='description'&gt;&lt;span&gt;&lt;data:description/&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='header-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div class='tabs-outer'&gt;
+    &lt;div class='tabs-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left tabs-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right tabs-fauxborder-right'/&gt;
+    &lt;div class='region-inner tabs-inner'&gt;
+      &lt;b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'&gt;
+&lt;b:widget id='HTML2' locked='false' title='Perfumes' type='HTML'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;!-- only display title if it's non-empty --&gt;
+  &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+    &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;data:content/&gt;
+  &lt;/div&gt;
+
+  &lt;b:include name='quickedit'/&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+      &lt;b:section class='tabs' id='crosscol-overflow' showaddelement='no'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='tabs-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class='main-outer'&gt;
+    &lt;div class='main-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+
+    &lt;div class='fauxborder-left main-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right main-fauxborder-right'/&gt;
+    &lt;div class='region-inner main-inner'&gt;
+
+      &lt;div class='columns fauxcolumns'&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-center-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-left-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-right-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- corrects IE6 width calculation --&gt;
+        &lt;div class='columns-inner'&gt;
+
+        &lt;div class='column-center-outer'&gt;
+        &lt;div class='column-center-inner'&gt;
+          &lt;b:section class='main' id='main' showaddelement='no'&gt;
+&lt;b:widget id='Blog1' locked='true' title='Postagens no blog' type='Blog'&gt;
+&lt;b:includable id='nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;span id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&lt;data:newerPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;span id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&lt;data:olderPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='shareButtons' var='post'&gt;
+  &lt;b:if cond='data:post.sharePostUrl'&gt;
+      &lt;a class='share-button sb-email' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=email&amp;quot;' expr:title='data:top.emailThisMsg' target='_blank'&gt;
+        &lt;span class='share-button-link-text'&gt;&lt;data:top.emailThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a class='share-button sb-blog' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=blog&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=270,width=475\&amp;quot;); return false;&amp;quot;' expr:title='data:top.blogThisMsg' target='_blank'&gt;
+        &lt;span class='share-button-link-text'&gt;&lt;data:top.blogThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a class='share-button sb-twitter' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=twitter&amp;quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'&gt;
+        &lt;span class='share-button-link-text'&gt;&lt;data:top.shareToTwitterMsg/&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a class='share-button sb-facebook' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=facebook&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=430,width=640\&amp;quot;); return false;&amp;quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'&gt;
+        &lt;span class='share-button-link-text'&gt;&lt;data:top.shareToFacebookMsg/&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a class='share-button sb-buzz' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=buzz&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=415,width=690\&amp;quot;); return false;&amp;quot;' expr:title='data:top.shareToBuzzMsg' target='_blank'&gt;
+        &lt;span class='share-button-link-text'&gt;&lt;data:top.shareToBuzzMsg/&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinks' var='post'&gt;
+  &lt;a name='links'/&gt;&lt;h4&gt;&lt;data:post.backlinksLabel/&gt;&lt;/h4&gt;
+  &lt;b:if cond='data:post.numBacklinks != 0'&gt;
+    &lt;dl class='comments-block' id='comments-block'&gt;
+      &lt;b:loop values='data:post.backlinks' var='backlink'&gt;
+        &lt;div class='collapsed-backlink backlink-control'&gt;
+          &lt;dt class='comment-title'&gt;
+            &lt;span class='backlink-toggle-zippy'&gt;&amp;#160;&lt;/span&gt;
+            &lt;a expr:href='data:backlink.url' rel='nofollow'&gt;&lt;data:backlink.title/&gt;&lt;/a&gt;
+            &lt;b:include data='backlink' name='backlinkDeleteIcon'/&gt;
+          &lt;/dt&gt;
+          &lt;dd class='comment-body collapseable'&gt;
+            &lt;data:backlink.snippet/&gt;
+          &lt;/dd&gt;
+          &lt;dd class='comment-footer collapseable'&gt;
+            &lt;span class='comment-author'&gt;&lt;data:post.authorLabel/&gt; &lt;data:backlink.author/&gt;&lt;/span&gt;
+            &lt;span class='comment-timestamp'&gt;&lt;data:post.timestampLabel/&gt; &lt;data:backlink.timestamp/&gt;&lt;/span&gt;
+          &lt;/dd&gt;
+        &lt;/div&gt;
+      &lt;/b:loop&gt;
+    &lt;/dl&gt;
+  &lt;/b:if&gt;
+  &lt;p class='comment-footer'&gt;
+    &lt;a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &amp;quot;_backlinks-create-link&amp;quot;' target='_blank'&gt;&lt;data:post.createLinkLabel/&gt;&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='post' var='post'&gt;
+  &lt;div class='post hentry'&gt;
+    &lt;a expr:name='data:post.id'/&gt;
+    &lt;b:if cond='data:post.title'&gt;
+      &lt;h3 class='post-title entry-title'&gt;
+     &lt;b:if cond='data:post.link'&gt;
+       &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+     &lt;b:else/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+        &lt;b:else/&gt;
+          &lt;data:post.title/&gt;
+        &lt;/b:if&gt;
+     &lt;/b:if&gt;
+      &lt;/h3&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-header'&gt;
+    &lt;div class='post-header-line-1'/&gt;
+    &lt;/div&gt;
+
+    &lt;div class='post-body entry-content'&gt;
+      &lt;data:post.body/&gt;
+      &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+    &lt;/div&gt;
+
+    &lt;b:if cond='data:post.hasJumpLink'&gt;
+      &lt;div class='jump-link'&gt;
+        &lt;a expr:href='data:post.url + &amp;quot;#more&amp;quot;' expr:title='data:post.title'&gt;&lt;data:post.jumpText/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-footer'&gt;
+    &lt;div class='post-footer-line post-footer-line-1'&gt;&lt;span class='post-author vcard'&gt;
+        &lt;b:if cond='data:top.showAuthor'&gt;
+          &lt;data:top.authorLabel/&gt;
+          &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-timestamp'&gt;
+        &lt;b:if cond='data:top.showTimestamp'&gt;
+          &lt;data:top.timestampLabel/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+        &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-comment-link'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+          &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+            &lt;b:if cond='data:post.allowComments'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-icons'&gt;
+        &lt;!-- email post links --&gt;
+        &lt;b:if cond='data:post.emailPostUrl'&gt;
+          &lt;span class='item-action'&gt;
+          &lt;a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'&gt;
+              &lt;img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/&gt;
+          &lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/b:if&gt;
+
+        &lt;!-- quickedit pencil --&gt;
+        &lt;b:include data='post' name='postQuickEdit'/&gt;
+      &lt;/span&gt; &lt;div class='post-share-buttons'&gt;
+        &lt;b:include data='post' name='shareButtons'/&gt;
+      &lt;/div&gt; &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-2'&gt;&lt;span class='post-labels'&gt;
+        &lt;b:if cond='data:post.labels'&gt;
+          &lt;data:postLabelsLabel/&gt;
+          &lt;b:loop values='data:post.labels' var='label'&gt;
+            &lt;a expr:href='data:label.url' rel='tag'&gt;&lt;data:label.name/&gt;&lt;/a&gt;&lt;b:if cond='data:label.isLast != &amp;quot;true&amp;quot;'&gt;,&lt;/b:if&gt;
+          &lt;/b:loop&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-3'/&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='status-message'&gt;
+  &lt;b:if cond='data:navMessage'&gt;
+  &lt;div class='status-msg-wrap'&gt;
+    &lt;div class='status-msg-body'&gt;
+      &lt;data:navMessage/&gt;
+    &lt;/div&gt;
+    &lt;div class='status-msg-border'&gt;
+      &lt;div class='status-msg-bg'&gt;
+        &lt;div class='status-msg-hidden'&gt;&lt;data:navMessage/&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style='clear: both;'/&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comment-form' var='post'&gt;
+  &lt;div class='comment-form'&gt;
+    &lt;a name='comment-form'/&gt;
+    &lt;h4 id='comment-post-message'&gt;&lt;data:postCommentMsg/&gt;&lt;/h4&gt;
+    &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+    &lt;data:blogTeamBlogMessage/&gt;
+    &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+    &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/&gt;
+    &lt;data:post.friendConnectJs/&gt;
+    &lt;data:post.cmtfpIframe/&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div id='comment-popup' style='width:100px;height:20px;'/&gt;
+    &lt;/b:if&gt;
+    &lt;script type='text/javascript'&gt;
+      BLOG_CMT_createIframe(&amp;#39;&lt;data:post.appRpcRelayPath/&gt;&amp;#39;, &amp;#39;&lt;data:post.communityId/&gt;&amp;#39;);
+    &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinkDeleteIcon' var='backlink'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:backlink.adminClass'&gt;
+    &lt;a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'&gt;
+      &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+    &lt;/a&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='postQuickEdit' var='post'&gt;
+  &lt;b:if cond='data:post.editUrl'&gt;
+    &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:post.adminClass'&gt;
+      &lt;a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'&gt;
+        &lt;img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/&gt;
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='main' var='top'&gt;
+
+  &lt;b:if cond='data:top.showPlusOne'&gt;
+    &lt;script expr:src='data:top.plusOneJsUrl'/&gt;
+  &lt;/b:if&gt;
+
+  &lt;!-- posts --&gt;
+  &lt;div class='blog-posts hfeed'&gt;
+
+    &lt;b:include data='top' name='status-message'/&gt;
+
+    &lt;data:defaultAdStart/&gt;
+    &lt;b:loop values='data:posts' var='post'&gt;
+      &lt;b:if cond='data:post.isDateStart'&gt;
+        &lt;b:if cond='data:post.isFirstPost == &amp;quot;false&amp;quot;'&gt;
+          &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+        &lt;/b:if&gt;
+      &lt;/b:if&gt;
+      &lt;b:if cond='data:post.isDateStart'&gt;
+        &amp;lt;div class=&amp;quot;date-outer&amp;quot;&amp;gt;
+      &lt;/b:if&gt;
+      &lt;b:if cond='data:post.dateHeader'&gt;
+        &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+      &lt;/b:if&gt;
+      &lt;b:if cond='data:post.isDateStart'&gt;
+        &amp;lt;div class=&amp;quot;date-posts&amp;quot;&amp;gt;
+      &lt;/b:if&gt;
+      &lt;div class='post-outer'&gt;
+      &lt;b:include data='post' name='post'/&gt;
+      &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+        &lt;b:include data='post' name='comments'/&gt;
+      &lt;/b:if&gt;
+      &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+        &lt;b:include data='post' name='comments'/&gt;
+      &lt;/b:if&gt;
+      &lt;/div&gt;
+      &lt;b:if cond='data:post.includeAd'&gt;
+        &lt;b:if cond='data:post.isFirstPost'&gt;
+          &lt;data:defaultAdEnd/&gt;
+        &lt;b:else/&gt;
+          &lt;data:adEnd/&gt;
+        &lt;/b:if&gt;
+        &lt;div class='inline-ad'&gt;
+          &lt;data:adCode/&gt;
+        &lt;/div&gt;
+        &lt;data:adStart/&gt;
+      &lt;/b:if&gt;
+      &lt;b:if cond='data:post.trackLatency'&gt;
+        &lt;data:post.latencyJs/&gt;
+      &lt;/b:if&gt;
+    &lt;/b:loop&gt;
+    &lt;b:if cond='data:numPosts != 0'&gt;
+      &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    &lt;/b:if&gt;
+    &lt;data:adEnd/&gt;
+  &lt;/div&gt;
+
+  &lt;!-- navigation --&gt;
+  &lt;b:include name='nextprev'/&gt;
+
+  &lt;!-- feed links --&gt;
+  &lt;b:include name='feedLinks'/&gt;
+
+  &lt;b:if cond='data:top.showStars'&gt;
+    &lt;script src='//www.google.com/jsapi' type='text/javascript'/&gt;
+    &lt;script type='text/javascript'&gt;
+      google.load(&amp;quot;annotations&amp;quot;, &amp;quot;1&amp;quot;, {&amp;quot;locale&amp;quot;: &amp;quot;&lt;data:top.languageCode/&gt;&amp;quot;});
+      function initialize() {
+        google.annotations.setApplicationId(&lt;data:top.blogspotReviews/&gt;);
+        google.annotations.createAll();
+        google.annotations.fetch();
+      }
+      google.setOnLoadCallback(initialize);
+    &lt;/script&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='commentDeleteIcon' var='comment'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:comment.adminClass'&gt;
+    &lt;a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'&gt;
+      &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+    &lt;/a&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinks'&gt;
+  &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt; &lt;!-- Blog feed links --&gt;
+    &lt;b:if cond='data:feedLinks'&gt;
+      &lt;div class='blog-feeds'&gt;
+        &lt;b:include data='feedLinks' name='feedLinksBody'/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:else/&gt; &lt;!--Post feed links --&gt;
+    &lt;div class='post-feeds'&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.allowComments'&gt;
+          &lt;b:if cond='data:post.feedLinks'&gt;
+            &lt;b:include data='post.feedLinks' name='feedLinksBody'/&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinksBody' var='links'&gt;
+  &lt;div class='feed-links'&gt;
+  &lt;data:feedLinksMsg/&gt;
+  &lt;b:loop values='data:links' var='f'&gt;
+     &lt;a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'&gt;&lt;data:f.name/&gt; (&lt;data:f.feedType/&gt;)&lt;/a&gt;
+  &lt;/b:loop&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comments' var='post'&gt;
+  &lt;div class='comments' id='comments'&gt;
+    &lt;a name='comments'/&gt;
+    &lt;b:if cond='data:post.allowComments'&gt;
+      &lt;h4&gt;
+        &lt;b:if cond='data:post.numComments == 1'&gt;
+          1 &lt;data:commentLabel/&gt;:
+        &lt;b:else/&gt;
+          &lt;data:post.numComments/&gt; &lt;data:commentLabelPlural/&gt;:
+        &lt;/b:if&gt;
+      &lt;/h4&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;&lt;data:post.oldestLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;&lt;data:post.olderLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;&lt;data:post.newerLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;&lt;data:post.newestLinkText/&gt;&lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;div expr:id='data:widget.instanceId + &amp;quot;_comments-block-wrapper&amp;quot;'&gt;
+        &lt;dl expr:class='data:post.avatarIndentClass' id='comments-block'&gt;
+          &lt;b:loop values='data:post.comments' var='comment'&gt;
+            &lt;dt expr:class='&amp;quot;comment-author &amp;quot; + data:comment.authorClass' expr:id='data:comment.anchorName'&gt;
+              &lt;b:if cond='data:comment.favicon'&gt;
+                &lt;img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/&gt;
+              &lt;/b:if&gt;
+              &lt;a expr:name='data:comment.anchorName'/&gt;
+              &lt;b:if cond='data:blog.enabledCommentProfileImages'&gt;
+                &lt;data:comment.authorAvatarImage/&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:comment.authorUrl'&gt;
+                &lt;a expr:href='data:comment.authorUrl' rel='nofollow'&gt;&lt;data:comment.author/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;data:comment.author/&gt;
+              &lt;/b:if&gt;
+              &lt;data:commentPostedByMsg/&gt;
+            &lt;/dt&gt;
+            &lt;dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'&gt;
+              &lt;b:if cond='data:comment.isDeleted'&gt;
+                &lt;span class='deleted-comment'&gt;&lt;data:comment.body/&gt;&lt;/span&gt;
+              &lt;b:else/&gt;
+                &lt;p&gt;
+                  &lt;data:comment.body/&gt;
+                &lt;/p&gt;
+              &lt;/b:if&gt;
+            &lt;/dd&gt;
+            &lt;dd class='comment-footer'&gt;
+              &lt;span class='comment-timestamp'&gt;
+                &lt;a expr:href='data:comment.url' title='comment permalink'&gt;
+                  &lt;data:comment.timestamp/&gt;
+                &lt;/a&gt;
+                &lt;b:include data='comment' name='commentDeleteIcon'/&gt;
+              &lt;/span&gt;
+            &lt;/dd&gt;
+          &lt;/b:loop&gt;
+        &lt;/dl&gt;
+      &lt;/div&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;
+            &lt;data:post.oldestLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;
+            &lt;data:post.olderLinkText/&gt;
+          &lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;
+            &lt;data:post.newerLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;
+            &lt;data:post.newestLinkText/&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;p class='comment-footer'&gt;
+        &lt;b:if cond='data:post.embedCommentForm'&gt;
+          &lt;b:if cond='data:post.allowNewComments'&gt;
+            &lt;b:include data='post' name='comment-form'/&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.noNewCommentsText/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+
+      &lt;/p&gt;
+    &lt;/b:if&gt;
+
+    &lt;div id='backlinks-container'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;_backlinks-container&amp;quot;'&gt;
+       &lt;b:if cond='data:post.showBacklinks'&gt;
+         &lt;b:include data='post' name='backlinks'/&gt;
+       &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='column-left-outer'&gt;
+        &lt;div class='column-left-inner'&gt;
+          &lt;aside&gt;
+          &lt;macro:include id='main-column-left-sections' name='sections'&gt;
+            &lt;macro:param default='0' name='num'/&gt;
+            &lt;macro:param default='sidebar-left' name='idPrefix'/&gt;
+            &lt;macro:param default='sidebar' name='class'/&gt;
+            &lt;macro:param default='true' name='includeBottom'/&gt;
+          &lt;/macro:include&gt;
+          &lt;/aside&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='column-right-outer'&gt;
+        &lt;div class='column-right-inner'&gt;
+          &lt;aside&gt;
+          &lt;macro:include id='main-column-right-sections' name='sections'&gt;
+            &lt;macro:param default='2' name='num'/&gt;
+            &lt;macro:param default='sidebar-right' name='idPrefix'/&gt;
+            &lt;macro:param default='sidebar' name='class'/&gt;
+            &lt;macro:param default='true' name='includeBottom'/&gt;
+          &lt;/macro:include&gt;
+          &lt;/aside&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div style='clear: both'/&gt;
+      &lt;!-- columns --&gt;
+      &lt;/div&gt;
+
+    &lt;!-- main --&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='main-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;
+    &lt;div class='footer-outer'&gt;
+    &lt;div class='footer-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left footer-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right footer-fauxborder-right'/&gt;
+    &lt;div class='region-inner footer-inner'&gt;
+      &lt;macro:include id='footer-sections' name='sections'&gt;
+        &lt;macro:param default='2' name='num'/&gt;
+        &lt;macro:param default='footer' name='idPrefix'/&gt;
+        &lt;macro:param default='foot' name='class'/&gt;
+        &lt;macro:param default='false' name='includeBottom'/&gt;
+      &lt;/macro:include&gt;
+      &lt;!-- outside of the include in order to lock Attribution widget --&gt;
+      &lt;b:section class='foot' id='footer-3' showaddelement='no'&gt;
+&lt;b:widget id='Attribution1' locked='true' title='' type='Attribution'&gt;
+&lt;b:includable id='main'&gt;
+    &lt;div class='widget-content' style='text-align: center;'&gt;
+      &lt;b:if cond='data:attribution != &amp;quot;&amp;quot;'&gt;
+        &lt;data:attribution/&gt;
+      &lt;/b:if&gt; 
+    &lt;/div&gt;
+
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='footer-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/footer&gt;
+
+  &lt;!-- content --&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='content-cap-bottom cap-bottom'&gt;
+    &lt;div class='cap-left'/&gt;
+    &lt;div class='cap-right'/&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script type='text/javascript'&gt;
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace(&amp;#39;loading&amp;#39;, &amp;#39;&amp;#39;);
+      }, 10);
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;macro:includable id='sections' var='col'&gt;
+  &lt;macro:if cond='data:col.num == 0'&gt;
+  &lt;macro:else/&gt;
+    &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-1&amp;quot;' preferred='yes' showaddelement='yes'/&gt;
+
+    &lt;macro:if cond='data:col.num &amp;gt;= 2'&gt;
+      &lt;table border='0' cellpadding='0' cellspacing='0' mexpr:class='&amp;quot;section-columns columns-&amp;quot; + data:col.num'&gt;
+      &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class='first columns-cell'&gt;
+          &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-1&amp;quot;'/&gt;
+        &lt;/td&gt;
+
+        &lt;td class='columns-cell'&gt;
+          &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-2&amp;quot;'/&gt;
+        &lt;/td&gt;
+
+        &lt;macro:if cond='data:col.num &amp;gt;= 3'&gt;
+          &lt;td class='columns-cell'&gt;
+            &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-3&amp;quot;'/&gt;
+          &lt;/td&gt;
+        &lt;/macro:if&gt;
+
+        &lt;macro:if cond='data:col.num &amp;gt;= 4'&gt;
+          &lt;td class='columns-cell'&gt;
+            &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-4&amp;quot;'/&gt;
+          &lt;/td&gt;
+        &lt;/macro:if&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;
+      &lt;/table&gt;
+
+      &lt;macro:if cond='data:col.includeBottom'&gt;
+        &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-3&amp;quot;' showaddelement='no'/&gt;
+      &lt;/macro:if&gt;
+    &lt;/macro:if&gt;
+  &lt;/macro:if&gt;
+&lt;/macro:includable&gt;
+
+&lt;b:section-contents id='sidebar-right-1'&gt;
+&lt;b:widget id='CustomSearch1' locked='false' title='Pesquisas' type='CustomSearch'&gt;
+&lt;b:includable id='main'&gt;
+    &lt;!-- only display title if it's non-empty --&gt;
+    &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+      &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='widget-content'&gt;
+      &lt;div expr:id='data:widget.instanceId + &amp;quot;_form&amp;quot;'&gt;
+        &lt;span class='cse-status'&gt;&lt;data:loadingMsg/&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- override gsearch.css --&gt;
+    &lt;style type='text/css'&gt;
+      #uds-searchControl .gs-result .gs-title,
+      #uds-searchControl .gs-result .gs-title *,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results * {
+        color:&lt;data:linkColor/&gt;;
+      }
+
+      #uds-searchControl .gs-result .gs-title a:visited,
+      #uds-searchControl .gs-result .gs-title a:visited * {
+        color:&lt;data:visitedLinkColor/&gt;;
+      }
+
+      #uds-searchControl .gs-relativePublishedDate,
+      #uds-searchControl .gs-publishedDate {
+        color: &lt;data:dateColor/&gt;;
+      }
+
+      #uds-searchControl .gs-result a.gs-visibleUrl,
+      #uds-searchControl .gs-result .gs-visibleUrl {
+        color: &lt;data:urlColor/&gt;;
+      }
+
+      #uds-searchControl .gsc-results {
+        border-color: &lt;data:borderColor/&gt;;
+        background-color: &lt;data:backgroundColor/&gt;;
+      }
+
+      #uds-searchControl .gsc-tabhActive {
+        border-color: &lt;data:borderColor/&gt;;
+        border-top-color: &lt;data:activeBorderColor/&gt;;
+        background-color: &lt;data:backgroundColor/&gt;;
+        color: &lt;data:textColor/&gt;;
+      }
+
+      #uds-searchControl .gsc-tabhInactive {
+        border-color: &lt;data:borderColor/&gt;;
+        background-color: transparent;
+        color: &lt;data:linkColor/&gt;;
+      }
+
+      #uds-searchClearResults {
+        border-color: &lt;data:borderColor/&gt;;
+      }
+
+      #uds-searchClearResults:hover {
+        border-color: &lt;data:activeBorderColor/&gt;;
+      }
+
+      #uds-searchControl .gsc-cursor-page {
+        color: &lt;data:linkColor/&gt;;
+      }
+
+      #uds-searchControl .gsc-cursor-current-page {
+        color: &lt;data:textColor/&gt;;
+      }
+    &lt;/style&gt;
+
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section-contents&gt;&lt;b:section-contents id='sidebar-right-2-1'&gt;
+&lt;b:widget id='Label1' locked='false' title='Marcadores' type='Label'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div expr:class='&amp;quot;widget-content &amp;quot; + data:display + &amp;quot;-label-widget-content&amp;quot;'&gt;
+    &lt;b:if cond='data:display == &amp;quot;list&amp;quot;'&gt;
+      &lt;ul&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;li&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/b:loop&gt;
+      &lt;/ul&gt;
+    &lt;b:else/&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;span expr:class='&amp;quot;label-size label-size-&amp;quot; + data:label.cssSize'&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span class='label-count' dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/span&gt;
+      &lt;/b:loop&gt;
+    &lt;/b:if&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section-contents&gt;&lt;b:section-contents id='sidebar-right-2-2'&gt;
+&lt;b:widget id='HTML1' locked='false' title='' type='HTML'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;!-- only display title if it's non-empty --&gt;
+  &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+    &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;data:content/&gt;
+  &lt;/div&gt;
+
+  &lt;b:include name='quickedit'/&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section-contents&gt;&lt;b:section-contents id='sidebar-right-3'/&gt;&lt;b:section-contents id='footer-1'/&gt;&lt;b:section-contents id='footer-2-1'/&gt;&lt;b:section-contents id='footer-2-2'/&gt;&lt;/html&gt;</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/template/default'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/template/default'/><link rel='alternate' type='text/html' href='http://rbrito1978.blogspot.com/'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_PUBLISHING_MODE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O tipo de publicação selecionado para esse blog.</title><content type='text'>PUBLISH_MODE_BLOGSPOT</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_PUBLISHING_MODE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_PUBLISHING_MODE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_NAME</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O nome do blog</title><content type='text'>Perfumes</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_NAME'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_NAME'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_DESCRIPTION</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Uma descrição do blog</title><content type='text'>Fragrâncias agradáveis com aromas internacionais.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DESCRIPTION'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DESCRIPTION'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_PROMOTED</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se este blog pode ser promovido no Blogger</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_PROMOTED'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_PROMOTED'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_SEARCHABLE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se este blog deve ser indexado pelos mecanismos de pesquisa</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SEARCHABLE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SEARCHABLE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_ADULT_CONTENT</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se este blog contém conteúdo para adultos</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ADULT_CONTENT'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ADULT_CONTENT'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_QUICK_EDITING</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se a Edição rápida está ativada</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_QUICK_EDITING'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_QUICK_EDITING'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_EMAIL_POST_LINKS</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se um link para envio de postagens dos usuários por e-mail será exibido</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_EMAIL_POST_LINKS'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_EMAIL_POST_LINKS'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_MAX_NUM</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Número máximo de itens que serão exibidos na página principal"</title><content type='text'>2</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_MAX_NUM'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_MAX_NUM'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_MAX_UNIT</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Grupo de itens que serão exibidos na página principal</title><content type='text'>POSTS</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_MAX_UNIT'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_MAX_UNIT'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_DATE_FORMAT</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O número do formato do cabeçalho de data</title><content type='text'>26</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DATE_FORMAT'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DATE_FORMAT'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_ARCHIVE_DATE_FORMAT</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O número do formato da data no índice do arquivo</title><content type='text'>9</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ARCHIVE_DATE_FORMAT'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ARCHIVE_DATE_FORMAT'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_TIME_STAMP_FORMAT</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O formato de número de data e hora</title><content type='text'>27</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_TIME_STAMP_FORMAT'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_TIME_STAMP_FORMAT'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_TIME_ZONE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O fuso horário para este blog</title><content type='text'>America/Sao_Paulo</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_TIME_ZONE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_TIME_ZONE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_LOCALE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Idioma deste blog</title><content type='text'>pt_BR</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_LOCALE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_LOCALE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_CONVERT_LINE_BREAKS</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se as quebras de linha serão convertidas em &lt;br /&gt; tags no editor de postagem</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_CONVERT_LINE_BREAKS'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_CONVERT_LINE_BREAKS'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_SHOW_TITLE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se o campo do título será exibido</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SHOW_TITLE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SHOW_TITLE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_SHOW_URL</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se uma caixa de links relacionados deve ser exibida no criador de postagens</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SHOW_URL'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SHOW_URL'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_FLOAT_ALIGNMENT</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se o alinhamento flutuante está disponível para o blog</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_FLOAT_ALIGNMENT'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_FLOAT_ALIGNMENT'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_POST_TEMPLATE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O modelo para as postagens do blog</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_POST_TEMPLATE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_POST_TEMPLATE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENTS_ALLOWED</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se os comentários serão exibidos</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENTS_ALLOWED'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENTS_ALLOWED'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_ACCESS</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Quem pode comentar</title><content type='text'>REGISTERED</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_ACCESS'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_ACCESS'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_DEFAULT_COMMENTS_MODE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Modo padrão de comentários para as postagens</title><content type='text'>DEFAULT_HAVE_COMMENTS</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DEFAULT_COMMENTS_MODE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DEFAULT_COMMENTS_MODE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_BACKLINKS_ALLOWED</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se os backlinks de comentários devem ser exibidos neste blog</title><content type='text'>false</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_BACKLINKS_ALLOWED'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_BACKLINKS_ALLOWED'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_DEFAULT_BACKLINKS_MODE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Modo padrão de backlinks para as postagens</title><content type='text'>DEFAULT_HAVE_BACKLINKS</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DEFAULT_BACKLINKS_MODE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_DEFAULT_BACKLINKS_MODE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENTS_TIME_STAMP_FORMAT</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Número de formato de data e hora do comentário</title><content type='text'>29</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENTS_TIME_STAMP_FORMAT'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENTS_TIME_STAMP_FORMAT'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_FORM_LOCATION</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Local do formulário de comentário do blog</title><content type='text'>POP_UP</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_FORM_LOCATION'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_FORM_LOCATION'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_MODERATION</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se a mediação de comentário deve ser ativada</title><content type='text'>ENABLED</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MODERATION'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MODERATION'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_MODERATION_DELAY</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Número de dias depois que os novos comentários estarão sujeitos à moderação</title><content type='text'>14</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MODERATION_DELAY'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MODERATION_DELAY'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_CAPTCHA</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se comentaristas devem ser solicitador a preencher uma captcha</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_CAPTCHA'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_CAPTCHA'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_PROFILE_IMAGES</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se imagens de perfil devem ser exibidas em comentários</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_PROFILE_IMAGES'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_PROFILE_IMAGES'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_EMAIL</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Lista de endereços de e-mail para enviar notificações de novos comentários para</title><content type='text'>rbrito1978@gmail.com,britodfbr@gmail.com</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_EMAIL'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_EMAIL'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_MODERATION_EMAIL</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Endereço de e-mail para enviar notificações de novos comentários que precisam ser moderados</title><content type='text'>rbrito1978@gmail.com</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MODERATION_EMAIL'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MODERATION_EMAIL'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_MESSAGE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Mensagem de comentário do blog</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MESSAGE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_MESSAGE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_ARCHIVE_FREQUENCY</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Com que freqüência este blog deve ser arquivado</title><content type='text'>MONTHLY</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ARCHIVE_FREQUENCY'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ARCHIVE_FREQUENCY'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_BY_POST_ARCHIVING</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Se uma página de arquivo deve ser exibida para cada postagem</title><content type='text'>true</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_BY_POST_ARCHIVING'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_BY_POST_ARCHIVING'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_POST_FEED</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O tipo de feed a ser fornecido para as postagens do blog</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_POST_FEED'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_POST_FEED'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_COMMENT_FEED</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O tipo de feed a ser fornecido para os comentários do blog</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_FEED'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_COMMENT_FEED'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_PER_POST_FEED</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O tipo de feed a ser fornecido por comentários de postagem</title><content type='text'>FULL</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_PER_POST_FEED'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_PER_POST_FEED'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_FEED_REDIRECT_URL</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>URL para redirecionar as solicitações de feed de postagem para</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_FEED_REDIRECT_URL'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_FEED_REDIRECT_URL'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_POST_FEED_FOOTER</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Rodapé para anexar ao fim de cada entrada no feed da postagem</title><content type='text'>---
+http://rbrito1978.blogspot.com/</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_POST_FEED_FOOTER'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_POST_FEED_FOOTER'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_SEND_EMAIL</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>Lista de e-mails separados por vírgula para enviar novas postagens de blog para</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SEND_EMAIL'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SEND_EMAIL'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_SUBDOMAIN</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O subdomínio do BlogSpot no qual deseja publicar seu blog</title><content type='text'>rbrito1978</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SUBDOMAIN'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_SUBDOMAIN'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_READ_ACCESS_MODE</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>O tipo de acesso dos leitores do blog.</title><content type='text'>PUBLIC</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_READ_ACCESS_MODE'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_READ_ACCESS_MODE'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_READER_PERMISSION</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>A lista de e-mails para os usuários que têm permissão para ler o blog.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_READER_PERMISSION'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_READER_PERMISSION'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_AUTHOR_PERMISSION</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>A lista de e-mails de autores que têm permissão para publicar.</title><content type='text'></content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_AUTHOR_PERMISSION'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_AUTHOR_PERMISSION'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.settings.BLOG_ADMIN_PERMISSION</id><published>2008-08-09T07:24:19.998-03:00</published><updated>2010-09-16T06:59:27.535-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#settings'/><title type='text'>A lista de e-mails de administradores para o blog.</title><content type='text'>rbrito1978@gmail.com</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ADMIN_PERMISSION'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/settings/BLOG_ADMIN_PERMISSION'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>noreply@blogger.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.post-5308213563641542532</id><published>2010-09-15T23:00:00.003-03:00</published><updated>2010-09-15T23:24:58.216-03:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Promoções'/><title type='text'>Out/2010</title><content type='html'>Na compra 2 perfumes de 50 ml, ganhe um perfume de 10 ml.&lt;br /&gt;&lt;br /&gt;&lt;blockquote&gt;Promoção válida até 31/10/2010&lt;/blockquote&gt;&lt;div class="blogger-post-footer"&gt;---
+http://rbrito1978.blogspot.com/&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://rbrito1978.blogspot.com/feeds/5308213563641542532/comments/default' title='Postar comentários'/><link rel='replies' type='text/html' href='https://www.blogger.com/comment.g?blogID=2934402295027387135&amp;postID=5308213563641542532&amp;isPopup=true' title='0 Comentários'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/posts/default/5308213563641542532'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/posts/default/5308213563641542532'/><link rel='alternate' type='text/html' href='http://rbrito1978.blogspot.com/2010/09/out2010.html' title='Out/2010'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>rbrito1978@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-2934402295027387135.post-2735515726587217849</id><published>2010-09-15T22:58:00.002-03:00</published><updated>2010-09-15T22:59:50.867-03:00</updated><app:control xmlns:app='http://purl.org/atom/app#'><app:draft>yes</app:draft></app:control><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Promoções'/><title type='text'>nov/2010</title><content type='html'>Na compra de 3 perfumes de 50 ml, o frete é grátis!!!&lt;br /&gt;&lt;br /&gt;Promoção válida de 1/9/2010 a 30/9/10.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/posts/default/2735515726587217849'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/2934402295027387135/posts/default/2735515726587217849'/><author><name>Brito</name><uri>http://www.blogger.com/profile/01174018239762611055</uri><email>rbrito1978@gmail.com</email></author><thr:total>0</thr:total></entry></feed>

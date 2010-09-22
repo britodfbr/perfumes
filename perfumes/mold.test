@@ -1,0 +1,13 @@
+<form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+  <input type="hidden" name="email_cobranca" value="perfumes@incolume.com.br" />
+  <input type="hidden" name="tipo" value="CBR" />
+  <input type="hidden" name="moeda" value="BRL" />
+  <input type="hidden" name="item_id" value="XXX" />
+  <input type="hidden" name="item_descr" value="Perfume Fragrancia Olfativa AAAA 50 ml" />
+  <input type="hidden" name="item_quant" value="1" />
+  <input type="hidden" name="item_valor" value="4500" />
+  <input type="hidden" name="frete" value="1000" />
+  <input type="hidden" name="peso" value="1" />
+  Perfume Fragr&acirc;ncia Olfativa AAAA 50 ml &#8212; R$ 45,00
+  <input type="image" name="submit" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamento/btnComprar.jpg" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+</form>

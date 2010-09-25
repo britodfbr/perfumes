@@ -9,5 +9,5 @@
   <input type="hidden" name="frete" value="1000" />
   <input type="hidden" name="peso" value="1" />
   Perfume Fragr&acirc;ncia Olfativa AAAA 50 ml &#8212; R$ 45,00
-  <input type="image" name="submit" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamento/btnComprar.jpg" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+  <input type="image" name="submit" src="https://incolume.googlecode.com/svn/trunk/perfumes/imagens/btComprar.jpg" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 </form>

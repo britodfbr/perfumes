@@ -7,7 +7,7 @@
   <td>
     <strong>
       <center> 
-         <font color='red'> 50% de desconto no frete <br />e perfume de 10 ml grátis, <br />na compra de 2 perfumes de 50 ml </font>
+         <font color='red'> Grátis Perfume de 10 ml e <br />50% de desconto no frete <br />na compra de 2 perfumes de 50 ml </font>
       </center>
     </strong>
 <br />
@@ -20,6 +20,7 @@
     <form name="form1" arget="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml"> 
       1&#186; Perfume de 50 ml 
          <select name='p1' id='p1'> 
+           <option value='000'>  </option> 
            <option value='001'> 001 </option> 
            <option value='002'> 002 </option> 
            <option value='003'> 003 </option> 
@@ -64,6 +65,7 @@
        <br />
     2&#186; Perfume de 50 ml 
        <select name='p2'> 
+           <option value='000'>  </option> 
            <option value='001'> 001 </option> 
            <option value='002'> 002 </option> 
            <option value='003'> 003 </option> 
@@ -108,6 +110,7 @@
        <br />
     3&#186; Perfume de 10 ml 
        <select name='p3'> 
+          <option value='000'>  </option> 
           <option value='001'> 001 </option> 
           <option value='003'> 003 </option> 
           <option value='010' selected > 010 </option> 
@@ -151,8 +154,8 @@
    document.form1.p1.selected;
    document.getElementById(this.form1.p1)
    function controle(form1) { var test = document.form1.p1.value; alert("Escreveste: " + test); }
+   print(document.form1.p1.selectedIndex + 1)
 </SCRIPT> 
-
 
 <input type="hidden" name="extras" value="-3000">
 

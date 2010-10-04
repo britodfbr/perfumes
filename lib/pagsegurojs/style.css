@@ -14,7 +14,14 @@
   background: #393;
   color: #FFF;
 }
-
+#subtitulo{
+  font-size: 1em;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #393;
+  color: #FFF;
+}
 /** Menu */
 
 #menu {

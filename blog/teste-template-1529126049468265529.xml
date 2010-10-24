@@ -686,7 +686,21 @@ h3.post-title {
     <div class='fauxborder-left tabs-fauxborder-left'>
     <div class='fauxborder-right tabs-fauxborder-right'/>
     <div class='region-inner tabs-inner'>
-      <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'>
+      <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
+      <b:section class='tabs' id='crosscol-overflow' showaddelement='no'>
+<b:widget id='HTML1' locked='false' title='' type='HTML'>
+<b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
 <b:widget id='PageList1' locked='false' title='Páginas' type='PageList'>
 <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
@@ -705,7 +719,6 @@ h3.post-title {
 </b:includable>
 </b:widget>
 </b:section>
-      <b:section class='tabs' id='crosscol-overflow' showaddelement='no'/>
     </div>
     </div>
     <div class='tabs-cap-bottom cap-bottom'>
@@ -1339,7 +1352,7 @@ h3.post-title {
 </macro:includable>
 
 <b:section-contents id='footer-1'>
-<b:widget id='HTML1' locked='false' title='Perfumes' type='HTML'>
+<b:widget id='HTML2' locked='false' title='' type='HTML'>
 <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>

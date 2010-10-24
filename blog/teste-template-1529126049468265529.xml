@@ -477,9 +477,9 @@ h3.post-title {
 ]]></b:skin>
 
     <b:template-skin>
-      <b:variable default='930px' name='content.width' type='length'/>
-      <b:variable default='0' name='main.column.left.width' type='length'/>
-      <b:variable default='360px' name='main.column.right.width' type='length'/>
+      <b:variable default='930px' name='content.width' type='length' value='700px'/>
+      <b:variable default='0' name='main.column.left.width' type='length' value='0px'/>
+      <b:variable default='360px' name='main.column.right.width' type='length' value='0px'/>
 
       <![CDATA[
       body {
@@ -686,7 +686,25 @@ h3.post-title {
     <div class='fauxborder-left tabs-fauxborder-left'>
     <div class='fauxborder-right tabs-fauxborder-right'/>
     <div class='region-inner tabs-inner'>
-      <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
+      <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'>
+<b:widget id='PageList1' locked='false' title='Páginas' type='PageList'>
+<b:includable id='main'>
+  <b:if cond='data:title'><h2><data:title/></h2></b:if>
+  <div class='widget-content'>
+    <ul>
+      <b:loop values='data:links' var='link'>
+        <b:if cond='data:link.isCurrentPage'>
+          <li class='selected'><a expr:href='data:link.href'><data:link.title/></a></li>
+        <b:else/>
+          <li><a expr:href='data:link.href'><data:link.title/></a></li>
+        </b:if>
+      </b:loop>
+    </ul>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+</b:section>
       <b:section class='tabs' id='crosscol-overflow' showaddelement='no'/>
     </div>
     </div>
@@ -900,14 +918,7 @@ h3.post-title {
         </b:if>
       </span> </div>
 
-      <div class='post-footer-line post-footer-line-3'><span class='post-location'>
-        <b:if cond='data:top.showLocation'>
-          <b:if cond='data:post.location'>
-            <data:postLocationLabel/>
-            <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
-          </b:if>
-        </b:if>
-      </span> </div>
+      <div class='post-footer-line post-footer-line-3'/>
     </div>
   </div>
 </b:includable>
@@ -1196,7 +1207,7 @@ h3.post-title {
         <div class='column-left-inner'>
           <aside>
           <macro:include id='main-column-left-sections' name='sections'>
-            <macro:param default='0' name='num'/>
+            <macro:param default='0' name='num' value='0'/>
             <macro:param default='sidebar-left' name='idPrefix'/>
             <macro:param default='sidebar' name='class'/>
             <macro:param default='true' name='includeBottom'/>
@@ -1209,7 +1220,7 @@ h3.post-title {
         <div class='column-right-inner'>
           <aside>
           <macro:include id='main-column-right-sections' name='sections'>
-            <macro:param default='2' name='num'/>
+            <macro:param default='2' name='num' value='0'/>
             <macro:param default='sidebar-right' name='idPrefix'/>
             <macro:param default='sidebar' name='class'/>
             <macro:param default='true' name='includeBottom'/>
@@ -1327,86 +1338,21 @@ h3.post-title {
   </macro:if>
 </macro:includable>
 
-<b:section-contents id='sidebar-right-1'>
-<b:widget id='Followers1' locked='false' title='Seguidores' type='Followers'>
+<b:section-contents id='footer-1'>
+<b:widget id='HTML1' locked='false' title='Perfumes' type='HTML'>
 <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
-    <b:if cond='data:codeSnippet != &quot;&quot;'>
-      <h2 class='title'><data:title/></h2>
-    <b:else/>
-      <b:if cond='data:totalFollowerCount != &quot;&quot;'>
-        <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
-      </b:if>
-    </b:if>  
+    <h2 class='title'><data:title/></h2>
   </b:if>
   <div class='widget-content'>
-    <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
-      <b:if cond='data:codeSnippet != &quot;&quot;'>
-        <div style='margin-right:2px;'>
-          <data:codeSnippet/>
-        </div>
-      <b:else/>
-        <b:if cond='data:totalFollowerCount == &quot;&quot;'>
-          <span class='item-control following-not-admin'>
-            <b><data:failureSnippet/></b>
-          </span>
-          <span class='item-control blog-admin'>
-            <b><data:adminFailureSnippet/></b>
-          </span>
-        <b:else/>
-          <b:if cond='data:followingLinkPresent'>
-            <div class='follow-this profile-link item-control following-follow-this'>
-              <a expr:href='&quot;javascript:_FollowersView._openPopup(\&quot;&quot; + data:followUri + &quot;\&quot;);&quot;'>
-                <data:followThisMessage/>
-              </a>
-            </div>
-            <div class='follow-this profile-link item-control following-stop-following-this'>
-              <a expr:href='&quot;javascript:_FollowersView._openPopup(\&quot;&quot; + data:followUri + &quot;\&quot;);&quot;'>
-                <data:stopFollowingMessage/>
-              </a>
-            </div>
-          </b:if>
-  
-          <div class='followers-grid'>
-            <b:if cond='data:totalFollowerCount == 0'>
-              <div class='profile-link item-control following-follow-this'>
-                <data:emptyFollowersMessage/>
-              </div>
-            </b:if>
-            <!--
-            Relies on the js written out in navbar.gxp
-            -->
-            <b:loop values='data:followers' var='follower'>
-              <div class='follower'>
-                <a expr:href='data:follower.profileUrl' expr:title='data:follower.displayName' rel='nofollow'>
-                <img class='follower-img' expr:alt='data:follower.displayName' expr:height='data:follower.imageHeight' expr:onerror='&quot;this.onerror=null;this.src=\&quot;&quot; + data:anonFollowerImageUrl + &quot;\&quot;;&quot;' expr:onload='&quot;setAttributeOnload(this, \&quot;src\&quot;, \&quot;&quot; + data:follower.imageUrl + &quot;\&quot;)&quot;' expr:width='data:follower.imageWidth' src='http://img1.blogblog.com/img/blank.gif'/>
-                </a>
-              </div>
-            </b:loop>
-            <div class='clear'/>
-          </div>
-  
-          <div class='followers-canvas profile-link'>
-            <data:followersFooterMessage/>
-            <span class='item-control following-not-admin'>
-              <a expr:href='data:followersUri'>
-                <data:viewAllMessage/>
-              </a>
-            </span>
-            <span class='item-control blog-admin'>
-              <a expr:href='data:manageFollowersUri'>
-                <data:manageFollowersMessage/>
-              </a>
-            </span>
-          </div>
-          </b:if>
-      </b:if>
-    </div>
-    <b:include name='quickedit'/>
+    <data:content/>
   </div>
+
+  <b:include name='quickedit'/>
 </b:includable>
 </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-1'>
+</b:section-contents><b:section-contents id='footer-2-1'>
 <b:widget id='Profile1' locked='false' title='Quem sou eu' type='Profile'>
 <b:includable id='main'>
     <b:if cond='data:title != &quot;&quot;'>
@@ -1442,7 +1388,7 @@ h3.post-title {
     </div>
   </b:includable>
 </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-2'>
+</b:section-contents><b:section-contents id='footer-2-2'>
 <b:widget id='BlogArchive1' locked='false' title='Arquivo do blog' type='BlogArchive'>
 <b:includable id='main'>
   <b:if cond='data:title'>
@@ -1526,4 +1472,82 @@ h3.post-title {
   </ul>
 </b:includable>
 </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-3'/><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
+<b:widget id='Followers1' locked='false' title='Seguidores' type='Followers'>
+<b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <b:if cond='data:codeSnippet != &quot;&quot;'>
+      <h2 class='title'><data:title/></h2>
+    <b:else/>
+      <b:if cond='data:totalFollowerCount != &quot;&quot;'>
+        <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
+      </b:if>
+    </b:if>  
+  </b:if>
+  <div class='widget-content'>
+    <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
+      <b:if cond='data:codeSnippet != &quot;&quot;'>
+        <div style='margin-right:2px;'>
+          <data:codeSnippet/>
+        </div>
+      <b:else/>
+        <b:if cond='data:totalFollowerCount == &quot;&quot;'>
+          <span class='item-control following-not-admin'>
+            <b><data:failureSnippet/></b>
+          </span>
+          <span class='item-control blog-admin'>
+            <b><data:adminFailureSnippet/></b>
+          </span>
+        <b:else/>
+          <b:if cond='data:followingLinkPresent'>
+            <div class='follow-this profile-link item-control following-follow-this'>
+              <a expr:href='&quot;javascript:_FollowersView._openPopup(\&quot;&quot; + data:followUri + &quot;\&quot;);&quot;'>
+                <data:followThisMessage/>
+              </a>
+            </div>
+            <div class='follow-this profile-link item-control following-stop-following-this'>
+              <a expr:href='&quot;javascript:_FollowersView._openPopup(\&quot;&quot; + data:followUri + &quot;\&quot;);&quot;'>
+                <data:stopFollowingMessage/>
+              </a>
+            </div>
+          </b:if>
+  
+          <div class='followers-grid'>
+            <b:if cond='data:totalFollowerCount == 0'>
+              <div class='profile-link item-control following-follow-this'>
+                <data:emptyFollowersMessage/>
+              </div>
+            </b:if>
+            <!--
+            Relies on the js written out in navbar.gxp
+            -->
+            <b:loop values='data:followers' var='follower'>
+              <div class='follower'>
+                <a expr:href='data:follower.profileUrl' expr:title='data:follower.displayName' rel='nofollow'>
+                <img class='follower-img' expr:alt='data:follower.displayName' expr:height='data:follower.imageHeight' expr:onerror='&quot;this.onerror=null;this.src=\&quot;&quot; + data:anonFollowerImageUrl + &quot;\&quot;;&quot;' expr:onload='&quot;setAttributeOnload(this, \&quot;src\&quot;, \&quot;&quot; + data:follower.imageUrl + &quot;\&quot;)&quot;' expr:width='data:follower.imageWidth' src='http://img1.blogblog.com/img/blank.gif'/>
+                </a>
+              </div>
+            </b:loop>
+            <div class='clear'/>
+          </div>
+  
+          <div class='followers-canvas profile-link'>
+            <data:followersFooterMessage/>
+            <span class='item-control following-not-admin'>
+              <a expr:href='data:followersUri'>
+                <data:viewAllMessage/>
+              </a>
+            </span>
+            <span class='item-control blog-admin'>
+              <a expr:href='data:manageFollowersUri'>
+                <data:manageFollowersMessage/>
+              </a>
+            </span>
+          </div>
+          </b:if>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+</b:section-contents></html>

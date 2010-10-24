@@ -544,9 +544,7 @@ h3.post-title, .comments h4 {
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
-    <h1 id='titulo'> 
-      Loja Perfumes Incolume
-    </h1> 
+      
     <h3 id='subtitulo'> Revendedor Ecssus Prime </h3> 
     <div id='menu'/> 
     <div id='main'/> 
@@ -607,7 +605,7 @@ h3.post-title, .comments h4 {
     <div class='fauxborder-right header-fauxborder-right'/>
     <div class='region-inner header-inner'>
       <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-<b:widget id='Header1' locked='true' title='Testes (Cabeçalho)' type='Header'>
+<b:widget id='Header1' locked='true' title='Loja Perfumes Incolume (Cabeçalho)' type='Header'>
 <b:includable id='main'>
 
   <b:if cond='data:useImage'>

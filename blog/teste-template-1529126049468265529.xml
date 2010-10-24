@@ -5,6 +5,7 @@
     <script language='JavaScript' src='https://incolume.googlecode.com/svn/trunk/lib/pagsegurojs/configuracoes.js' type='text/javascript'/> 
     <script language='JavaScript' src='https://incolume.googlecode.com/svn/trunk/lib/pagsegurojs/loja.js' type='text/javascript'/> 
     <script language='JavaScript' src='https://incolume.googlecode.com/svn/trunk/lib/pagsegurojs/pagseguro.js' type='text/javascript'/>
+    <link rel="stylesheet" href="https://incolume.googlecode.com/svn/trunk/lib/pagsegurojs/style.css" type="text/css" media="Screen" />
     <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
     <b:if cond='data:blog.isMobile'>
       <meta content='width=device-width,minimum-scale=1.0,maximum-scale=3.0' name='viewport'/>
@@ -474,6 +475,66 @@ h3.post-title, .comments h4 {
 .footer-outer {
   border-top: $(footer.bevel) dashed #bbbbbb;
 }
+/** personalização*/
+/** Menu */
+
+#menu {
+  float: left;
+  background: #3A3;
+  height: 2em;
+  line-height: 2em;
+  width: 100%;
+  border-bottom: 5px solid #393;
+}
+#menu li {
+  float:left;
+}
+#menu li a {
+  display:block;
+  padding: 0 10px;
+  color:#FFF;
+  font-weight: 600;
+  text-decoration:none;
+}
+#menu li a:hover {
+  background: #FFF;
+  color: #3A3;
+}
+
+/** Conteudo */
+
+#main {
+  float:left;
+  width: 60%;
+  margin-left:1%;
+}
+
+#main h2 {
+  margin: 10px 0;
+  font-size: 1.6em;
+  border-bottom: 1px solid #393;
+}
+
+#main dl {
+  float:left;
+  margin: 5px;
+  width: 200px;
+  height: 120px;
+}
+#main dl dt {
+  font-weight: 600;
+}
+#main dl img {
+  float:left;
+  margin-right: 3px;
+  width: 50px;
+  height: 50px;
+}
+#carrinho {
+  float:left;
+  width: 35%;
+  margin-left:1%;
+}
 ]]></b:skin>
 
     <b:template-skin>
@@ -543,11 +604,11 @@ h3.post-title, .comments h4 {
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
-      
-    <h3 id='subtitulo'> Revendedor Ecssus Prime </h3> 
+    <!-- personlização-->  
     <div id='menu'/> 
     <div id='main'/> 
     <div id='carrinho'/> 
+    <!-- personlização-->  
   <div class='body-fauxcolumns'>
     <div class='fauxcolumn-outer body-fauxcolumn-outer'>
     <div class='cap-top'>

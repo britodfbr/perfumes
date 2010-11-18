@@ -1,4 +1,4 @@
-<table border=1>
+<table border=0>
 <tr> <th colspan=2 align=center> Promo&ccedil;&atilde;o 201012 </th></tr>
 <tr> 
 <td>
@@ -14,7 +14,7 @@
 
 </td>
 <tr> <td align='center'>
-<img src="https://incolume.googlecode.com/svn/trunk/imagens/promo2011a.png" alt="Itens da promoção" />
+<img src="https://incolume.googlecode.com/svn/trunk/imagens/promo2010a.png" alt="Itens da promoção" />
 </td> </tr>
 <tr><td>
 
@@ -262,6 +262,10 @@
 </select>
 <br/>
 
+<center>
+<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/carrinhoproprio/btnFinalizaBR.jpg" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+</center>
+
 <input type="hidden" name="email_cobranca" value="vendas@perfumes.incolume.com.br">
 <input type="hidden" name="tipo" value="CP">
 <input type="hidden" name="moeda" value="BRL">
@@ -294,33 +298,23 @@
 <input type="hidden" name="item_frete_4" value="1000">
 <input type="hidden" name="item_peso_4" value="1">
 
-<input type="hidden" size="2" name="item_id_5" value="" onSubmit="javascript:this.value=this.form1.p4.selected();">
+<input type="hidden" size="2" name="item_id_5" value="" onSubmit="javascript:this.value=this.form1.p5.selected();">
 <input type="hidden" size="2" name="item_descr_5" value="">
 <input type="hidden" name="item_quant_5" value="1">
 <input type="hidden" name="item_valor_5" value="3300">
 <input type="hidden" name="item_frete_5" value="1000">
 <input type="hidden" name="item_peso_5" value="1">
 
-<input type="hidden" size="2" name="item_id_6" value="" onSubmit="javascript:this.value=this.form1.p4.selected();">
+<input type="hidden" size="2" name="item_id_6" value="" onSubmit="javascript:this.value=this.form1.p6.selected();">
 <input type="hidden" size="2" name="item_descr_6" value="">
 <input type="hidden" name="item_quant_6" value="1">
-<input type="hidden" name="item_valor_6" value="3300">
+<input type="hidden" name="item_valor_6" value="2000">
 <input type="hidden" name="item_frete_6" value="1000">
 <input type="hidden" name="item_peso_6" value="1">
 
-<input type="hidden" size="2" name="item_id_7" value="" onSubmit="javascript:this.value=this.form1.p4.selected();">
-<input type="hidden" size="2" name="item_descr_7" value="">
-<input type="hidden" name="item_quant_7" value="1">
-<input type="hidden" name="item_valor_7" value="2000">
-<input type="hidden" name="item_frete_7" value="1000">
-<input type="hidden" name="item_peso_7" value="1">
+<input type="hidden" name="extras" value="-5500">
 
-<input type="hidden" size="2" name="item_id_8" value="" onSubmit="javascript:this.value=this.form1.p4.selected();">
-<input type="hidden" size="2" name="item_descr_8" value="">
-<input type="hidden" name="item_quant_8" value="1">
-<input type="hidden" name="item_valor_8" value="2000">
-<input type="hidden" name="item_frete_8" value="1000">
-<input type="hidden" name="item_peso_8" value="1">
+<!-- <input type="hidden" name="tipo_frete" value="EN"> -->
 
 <script language="JavaScript">
    document.form1.p1.focus();
@@ -353,14 +347,6 @@
    var codP6 = form1.p6.options[indexP6].value;
    selecionaP6(codP6);
 
-   var indexP7 = document.getElementById("p7").selectedIndex;
-   var codP7 = form1.p7.options[indexP7].value;
-   selecionaP6(codP7);
-
-   var indexP8 = document.getElementById("p8").selectedIndex;
-   var codP8 = form1.p8.options[indexP8].value;
-   selecionaP8(codP8);
-
    function  selecionaP1(codP1){
      document.form1.item_id_1.value = codP1;
      document.form1.item_descr_1.value = "Perfume Fragrancia Olfativa "+ codP1 +" 30 ml";
@@ -388,30 +374,11 @@
   
    function  selecionaP6(codP6){
      document.form1.item_id_6.value = codP6;
-     document.form1.item_descr_6.value = "Perfume Fragrancia Olfativa "+ codP6 +" 30 ml";
-   }
-  
-   function  selecionaP6(codP7){
-     document.form1.item_id_7.value = codP7;
-     document.form1.item_descr_7.value = "Perfume Fragrancia Olfativa "+ codP7 +" 10 ml";
-   }
-  
-   function  selecionaP6(codP8){
-     document.form1.item_id_8.value = codP8;
-     document.form1.item_descr_8.value = "Perfume Fragrancia Olfativa "+ codP8 +" 10 ml";
+     document.form1.item_descr_6.value = "Perfume Fragrancia Olfativa "+ codP6 +" 10 ml";
    }
   
 </SCRIPT>
 
-
-<input type="hidden" name="extras" value="-3500">
-
-<!-- <input type="hidden" name="tipo_frete" value="EN"> -->
-<center>
-<input type="image"
-src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/carrinhoproprio/btnFinalizaBR.jpg"
-name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
-</center>
 </form>
 </td> </tr>
 </table>

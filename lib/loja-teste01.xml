@@ -86,10 +86,10 @@ a img {  border-width:0;  }
 #header { margin: 0px;padding: 0px; width:60%; float:left;  }
 
 #header h1 {
-font: normal 46px chunk; color:#1b2502; text-shadow:#5d7a17 1px 1px 1px;  padding:45px 0 0 0; margin: 0px;display:block;}
+font: normal 46px chunk; color:#6db400; text-shadow:#000 1px 1px 1px;  padding:45px 0 0 0; margin: 0px;display:block;}
 
 #searchbar {width:39%; float:right;padding:55px 0 0;margin: 0px;}
-#searchfield {background:url(http://1.bp.blogspot.com/_dZM2bJJMfBs/TQzuz8MTYzI/AAAAAAAABBQ/iovYdLqEQJs/s000/searchbar.gif) no-repeat; width:239px; height:35px; float:right;}
+#searchfield {background:url(https://incolume.googlecode.com/svn/trunk/imagens/searchbar.gif) no-repeat; width:239px; height:35px; float:right;}
 #searchfield .keyword {width:190px; background:transparent; border:none; padding:8px 0 0 10px; color:#fff; display:block; float:left;}
 #searchfield .searchbutton {display:block; float:left; margin:7px 0 0 5px;}
 
@@ -662,7 +662,7 @@ function createSummaryAndThumb(pID){
 <li class='active'><a expr:href='data:blog.homepageUrl' title='Home'><span>Home</span></a></li>
 	<li><a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' title='Posts RSS'><span>Posts RSS</span></a></li>
 	<li><a expr:href='data:blog.homepageUrl + &quot;feeds/comments/default&quot;' title='Comments RSS'><span>Comments RSS</span></a></li>
-	<li><a href='#' title='Edit this link'><span>Edit</span></a></li>
+	<!-- <li><a href='#' title='Edit this link'><span>Edit</span></a></li> -->
 </ul>
 </div>
 
@@ -1479,7 +1479,7 @@ Enviar por Email
 
 <div class='clear'/>
 <div id='footer'>
-<a expr:href='data:blog.homepageUrl'><data:blog.title/></a> | All Rights Reserved
+  <center> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> | All Rights Reserved </center>
 </div>
 </div>
 </div>

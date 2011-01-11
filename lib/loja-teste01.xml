@@ -95,9 +95,9 @@ font: normal 46px chunk; color:#6db400; text-shadow:#000 1px 1px 1px;  padding:4
 
 #searchfield .input-text{background:transparent;margin: 7px 0 0 5px;border: none;}
 
-#header a {  color:#1b2502;  text-decoration:none;  }
+#header a {  color:#6db400;  text-decoration:none;  }
 
-#header a:hover {  color:#1b2502; }
+#header a:hover {  color:#6db400; }
 
 #header .description{height:0px;text-indent: -9999em}
 
@@ -135,7 +135,7 @@ font: normal 46px chunk; color:#6db400; text-shadow:#000 1px 1px 1px;  padding:4
 
 #contentbtm {float:left;margin: 0 auto;height:12px;width: 100%;background:url(http://4.bp.blogspot.com/_dZM2bJJMfBs/TQzu1Um8j3I/AAAAAAAABBs/TZFBZ9jdwow/s000/cntntbtm.gif) center no-repeat; }
 
-#image {background:url(https://incolume.googlecode.com/svn/trunk/imagens/header2.jpg) center center no-repeat; width:980px; height:170px; padding:10px;margin: 0 auto;}
+#image {background:url(https://incolume.googlecode.com/svn/trunk/imagens/header3.gif) center center no-repeat; width:980px; height:170px; padding:10px;margin: 0 auto;}
 
 #main-wrapper {
 border-right:1px solid #AAB38A;
@@ -800,7 +800,7 @@ function createSummaryAndThumb(pID){
 <div expr:id='&quot;summary&quot; + data:post.id'><data:post.body/></div>
 
 <script type='text/javascript'>createSummaryAndThumb(&quot;summary<data:post.id/>&quot;);</script>
-<span id='showlink'><a expr:href='data:post.url'>Comprar</a></span>
+<span id='showlink'><a expr:href='data:post.url'>Aproveitar</a></span>
 </div>
 
 </b:if></b:if>

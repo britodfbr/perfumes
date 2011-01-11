@@ -660,8 +660,8 @@ function createSummaryAndThumb(pID){
 <div id='menu'>
 <ul>
 <li class='active'><a expr:href='data:blog.homepageUrl' title='Home'><span>Home</span></a></li>
-	<li><a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' title='Posts RSS'><span>Posts RSS</span></a></li>
-	<li><a expr:href='data:blog.homepageUrl + &quot;feeds/comments/default&quot;' title='Comments RSS'><span>Comments RSS</span></a></li>
+	<li><a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' title='Posts RSS'><span>Posts RSS</span></a></li> 
+	<!-- <li><a expr:href='data:blog.homepageUrl + &quot;feeds/comments/default&quot;' title='Comments RSS'><span>Comments RSS</span></a></li> -->
 	<!-- <li><a href='#' title='Edit this link'><span>Edit</span></a></li> -->
 </ul>
 </div>

@@ -89,7 +89,7 @@ a img {  border-width:0;  }
 font: normal 46px chunk; color:#1b2502; text-shadow:#5d7a17 1px 1px 1px;  padding:45px 0 0 0; margin: 0px;display:block;}
 
 #searchbar {width:39%; float:right;padding:55px 0 0;margin: 0px;}
-#searchfield {background:url(http://1.bp.blogspot.com/_dZM2bJJMfBs/TQzuz8MTYzI/AAAAAAAABBQ/iovYdLqEQJs/s000/searchbar.gif) no-repeat; width:239px; height:35px; float:right;}
+#searchfield {background:url(http://1.bp.blogspot.com/_dZM2bJJMfBs/TQzuz8MTYzI/AAAAAAAABBQ/iovYdLqEQJs/s000/searchbarXXX.gif) no-repeat; width:239px; height:35px; float:right;}
 #searchfield .keyword {width:190px; background:transparent; border:none; padding:8px 0 0 10px; color:#fff; display:block; float:left;}
 #searchfield .searchbutton {display:block; float:left; margin:7px 0 0 5px;}
 
@@ -1442,7 +1442,7 @@ Enviar por Email
 
 <!-- espaço para informação-->
 
-<img alt='' height='128' src='http://2.bp.blogspot.com/_dZM2bJJMfBs/TQzu6GlF_ZI/AAAAAAAABCc/ZM9ORAxrqQs/s000/bug.jpg' width='128'/></div>
+<img alt='Parcele suas compras em até 3x sem juros' height='240' width='120' src='https://p.simg.uol.com.br/out/pagseguro/i/banners/parcelamento/120x240_pagseguro_3x.gif' /></div>
 <div id='authbio'>
 <!-- 
 <h2>About You!</h2>

@@ -103,7 +103,7 @@ font: normal 46px chunk; color:#6db400; text-shadow:#000 1px 1px 1px;  padding:4
 
 #navbar-iframe{height:0px}
 
-#menu {background:url(http://1.bp.blogspot.com/_dZM2bJJMfBs/TQzuz4W0NaI/AAAAAAAABBU/875oYJQvprI/s000/contenttop.gif) center bottom no-repeat;width: 1000px; margin: 0px;height:44px; padding-bottom:11px;float:left; }
+#menu {center bottom no-repeat;width: 1000px; margin: 0px;height:44px; float:left; }
 
 #menu ul {float:left;margin: 0px;width: 100%;height:44px;list-style:none;}
 
@@ -131,7 +131,7 @@ font: normal 46px chunk; color:#6db400; text-shadow:#000 1px 1px 1px;  padding:4
   text-align:$startSide;
   font: $bodyfont; }
 
-#content-wrapper {margin: 0 auto 0px;width: 1000px;background:url(http://www.blogblog.com/1kt/transparent/white80.png) repeat scroll top left; padding:10px 0 3px 0;float:left;clear:both}
+#content-wrapper {margin: 0 auto 0px;width: 1000px;background:url(http://www.blogblog.com/1kt/transparent/white80.png) repeat scroll top left; border-top-right-radius: 20px 20px; border-top-left-radius: 20px 20px; border-bottom-left-radius: 20px 20px; border-bottom-right-radius: 20px 20px; padding:10px 0 10px 0;float:left;clear:both}
 
 #contentbtm {float:left;margin: 0 auto;height:12px;width: 100%;background:url(http://4.bp.blogspot.com/_dZM2bJJMfBs/TQzu1Um8j3I/AAAAAAAABBs/TZFBZ9jdwow/s000/cntntbtm.gif) center no-repeat; }
 
@@ -361,11 +361,15 @@ text-shadow:1px 1px 1px #FFFFFF;}
 /* Footer
 ---------------------------- */
 #bottom {
-background:url("http://4.bp.blogspot.com/_dZM2bJJMfBs/TQzu3tJZBuI/AAAAAAAABB8/IEPBOlQEmsw/s000/footerbg.gif") repeat scroll 0 0 transparent;
+background:url("http://www.blogblog.com/1kt/transparent/black50.png") repeat scroll 0 0 transparent;
 color:#C8D0AB;
 font-family:Contra;
 margin:0 10px;
-padding:20px 10px 10px;}
+padding:20px 10px 10px;
+border-bottom-left-radius: 20px 20px;
+border-bottom-right-radius: 20px 20px;
+border-top-left-radius: 0px 0px;
+border-top-right-radius: 0px 0px;}
 
 #shortinfo {
 background:url("http://1.bp.blogspot.com/_dZM2bJJMfBs/TQzu4T_v_WI/AAAAAAAABCA/OUEcLmP2k10/s000/ftlv.jpg") repeat-y scroll right top transparent;
@@ -1483,7 +1487,7 @@ Enviar por Email
 </div>
 </div>
 </div>
-<div id='contentbtm'/>
+<div id=''/>
 <div id='credits'>
 <!--By using this template, you agree to keep this link in tact in your home page and all the other pages.
 Do not remove-->

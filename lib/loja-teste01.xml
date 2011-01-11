@@ -131,7 +131,7 @@ font: normal 46px chunk; color:#6db400; text-shadow:#000 1px 1px 1px;  padding:4
   text-align:$startSide;
   font: $bodyfont; }
 
-#content-wrapper {margin: 0 auto 0px;width: 1000px;background:url(http://3.bp.blogspot.com/_dZM2bJJMfBs/TQzu1EOdJyI/AAAAAAAABBo/tIGtMal5r8w/s000/contentbg.gif) repeat-y; padding:10px 0 3px 0;float:left;clear:both}
+#content-wrapper {margin: 0 auto 0px;width: 1000px;background:url(http://www.blogblog.com/1kt/transparent/white80.png) repeat scroll top left; padding:10px 0 3px 0;float:left;clear:both}
 
 #contentbtm {float:left;margin: 0 auto;height:12px;width: 100%;background:url(http://4.bp.blogspot.com/_dZM2bJJMfBs/TQzu1Um8j3I/AAAAAAAABBs/TZFBZ9jdwow/s000/cntntbtm.gif) center no-repeat; }
 
@@ -660,7 +660,7 @@ function createSummaryAndThumb(pID){
 <div id='menu'>
 <ul>
 <li class='active'><a expr:href='data:blog.homepageUrl' title='Home'><span>Home</span></a></li>
-	<li><a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' title='Posts RSS'><span>Posts RSS</span></a></li> 
+	<li><a expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' title='Posts RSS'><span>Posts RSS</span></a></li>
 	<!-- <li><a expr:href='data:blog.homepageUrl + &quot;feeds/comments/default&quot;' title='Comments RSS'><span>Comments RSS</span></a></li> -->
 	<!-- <li><a href='#' title='Edit this link'><span>Edit</span></a></li> -->
 </ul>

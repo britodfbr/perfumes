@@ -135,7 +135,7 @@ font: normal 46px chunk; color:#1b2502; text-shadow:#5d7a17 1px 1px 1px;  paddin
 
 #contentbtm {float:left;margin: 0 auto;height:12px;width: 100%;background:url(http://4.bp.blogspot.com/_dZM2bJJMfBs/TQzu1Um8j3I/AAAAAAAABBs/TZFBZ9jdwow/s000/cntntbtm.gif) center no-repeat; }
 
-#image {background:url(http://4.bp.blogspot.com/_dZM2bJJMfBs/TQzu1y2wZ4I/AAAAAAAABBw/ruxoUxDE13E/s000/header.jpg) center center no-repeat; width:980px; height:170px; padding:10px;margin: 0 auto;}
+#image {background:url(https://incolume.googlecode.com/svn/trunk/imagens/header2.jpg) center center no-repeat; width:980px; height:170px; padding:10px;margin: 0 auto;}
 
 #main-wrapper {
 border-right:1px solid #AAB38A;

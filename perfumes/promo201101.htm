@@ -1,0 +1,91 @@
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_6tvEHK0zxUQ/TTNKdGim6vI/AAAAAAAAA5w/TbJ-cTWqFkw/s1600/promo001_350x206_50ml.png"><img style="float:right; margin:0 0 10px 10px;cursor:pointer; cursor:hand;width: 350px; height: 206px;" src="http://4.bp.blogspot.com/_6tvEHK0zxUQ/TTNKdGim6vI/AAAAAAAAA5w/TbJ-cTWqFkw/s400/promo001_350x206_50ml.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5562871828565125874" /></a>
+
+<strong>
+  <font color='red'> Grátis o frete na compra de 4 perfumes de 50 ml </font>
+</strong>
+
+<form name="form1" target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+1&#186; Perfume de 50 ml: <br/>
+<select name='p1' id='p1' onchange="selecionaP1(this.value)">
+<option value='' SELECTED >  </option>
+<option value='001'> 001 - Amor Amor </option>
+<option value='002'> 002 - Azarro Chome </option>
+<option value='003'> 003 - Anais Anais </option>
+<option value='004'> 004 - Bulgari Black (unissex) </option>
+<option value='005'> 005 - Angel </option>
+<option value='006'> 006 - Calvin Klein One (unissex) </option>
+<option value='007'> 007 - Carolina Herreira </option>
+<option value='008'> 008 - Dolce & Gabana </option>
+<option value='009'> 009 - Chance </option>
+<option value='010'> 010 - Eternity </option>
+<option value='011'> 011 - Channel nº5 </option>
+<option value='012'> 012 - Ferrari Black </option>
+<option value='013'> 013 - Dolce & Gabana </option>
+<option value='014'> 014 - Ferrari Red </option>
+<option value='015'> 015 - Eternity </option>
+<option value='016'> 016 - Hugo Boss </option>
+<option value='017'> 017 - Flower </option>
+<option value='018'> 018 - Joop Night Flight </option>
+<option value='019'> 019 - Gabriela Sabatini </option>
+<option value='020'> 020 - Kouros </option>
+<option value='021'> 021 - Hipnose </option>
+<option value='022'> 022 - Kouros Fraugher </option>
+<option value='023'> 023 - J'Adore </option>
+<option value='024'> 024 - Le Malle </option>
+<option value='025'> 025 - Laguna </option>
+<option value='026'> 026 - L'Eau Dissey Homme </option>
+<option value='027'> 027 - Mont Blac Presence </option>
+<option value='028'> 028 - Minotaure </option>
+<option value='029'> 029 - Nat Magic Baby (Unisex/infantil) </option>
+<option value='030'> 030 - Mont Blac Presence </option>
+<option value='031'> 031 - Paris </option>
+<option value='032'> 032 - Pi Givanchi </option>
+<option value='033'> 033 - Polo Sport </option>
+<option value='034'> 034 - Polo Blue </option>
+<option value='035'> 035 - Ralf For Womam </option>
+<option value='036'> 036 - Polo Sport </option>
+<option value='037'> 037 - Sense </option>
+<option value='038'> 038 - Polo Verde </option>
+<option value='039'> 039 - Two One Two (212)- Sexy </option>
+<option value='040'> 040 - Strong Man </option>
+</select>
+
+<input type="hidden" size="0" name="extras" value="-500">
+
+<!-- <input type="hidden" size="0" name="tipo_frete" value="EN"> -->
+<center>
+  <!--
+  <input type="image" src="https://incolume.googlecode.com/svn/trunk/imagens/btComprarAgora.gif" name="submit" alt="Comprar">
+  -->
+  <input type="submit" value="Comprar" alt="Comprar">
+  <input type="button" onclick="controle(this)" value="Show alert box" />
+</center>
+
+<input type="hidden" size="0" name="email_cobranca" value="vendas@perfumes.incolume.com.br">
+<input type="hidden" size="0" name="tipo" value="CP">
+<input type="hidden" size="0" name="moeda" value="BRL">
+
+<input type="" size="4" name="item_id_1" value="" onSubmit="javascript:this.value=this.form1.p1.selected();">
+<input type="" size="4" name="item_descr_1" value="">
+<input type="" size="4" name="item_quant_1" value="1">
+<input type="" size="4" name="item_valor_1" value="4500">
+<input type="" size="4" name="item_frete_1" value="1000">
+<input type="" size="4" name="item_peso_1" value="0">
+
+<script language="JavaScript">
+   document.post.form1.p1.focus();
+   document.post.form1.p1.selected;
+   document.post.getElementById(this.form1.p1)
+   function controle(form1) { var test = document.post.form1.p1.value; alert("Escreveste: " + test); }
+  
+   //como já está vindo selecionado os campos então eu chamo a função quando abre a página tbm
+   var indexP1 = document.post.getElementById("p1").selectedIndex;
+   var codP1 = form1.p1.options[indexP1].value;
+   selecionaP1(codP1);
+
+   function  selecionaP1(codP1){
+     document.post.form1.item_id_1.value = codP1;
+     document.post.form1.item_descr_1.value = "Perfume Fragrancia Olfativa "+ codP1 +" 50 ml";
+   }
+</script>
+</form>

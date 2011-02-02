@@ -1,4 +1,3 @@
-document.form1.p1.focus();
 document.form1.p1.selected;
 function controle(form1) { var test = document.form1.p1.value; alert("Escreveste: " + test); }
 

@@ -1,4 +1,5 @@
-document.form1.p1.selected;
+this.form1.p1.focus();
+this.form1.p1.selected;
 function controle(form1) { var test = document.form1.p1.value; alert("Escreveste: " + test); }
 
 //como já está vindo selecionado os campos então eu chamo a função quando abre a página tbm

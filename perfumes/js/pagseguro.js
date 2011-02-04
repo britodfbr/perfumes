@@ -126,7 +126,6 @@ PagSeguro.prototype.valor = function(valor) {
   return Number(valor).toFixed(2).replace(/[^\d]/, '')
 }
 
-
 window.onload=function() {
   pgs=new PagSeguro(configuracoes, loja)
 }

@@ -80,7 +80,7 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   ret += '<input type="hidden" name="email_cobranca" value="'+this.configuracoes.email+'" />'
   ret += '<input type="hidden" name="moeda" value="'+this.configuracoes.moeda+'" />'
   ret += '<input type="hidden" name="tipo" value="CP" />'
-  ret += '<input type="hidden" name="extra" value="" />'
+  ret += '<input type="hidden" name="extra" value="0" />'
   ret += '<input type="hidden" name="encoding" value="utf-8" />'
 
 

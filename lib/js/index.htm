@@ -6,6 +6,18 @@ function notEmpty(){
 	else
 		alert("Would you please enter some text?")		
 }
+function incremento(objId){
+  var q = document.getElementById(objId).value;
+  //alert(q);
+  q++;
+  alert(q);
+  document.getElementById(elemQuantia).value = q;
+
+}
+
 </script>
+Quantia: <input type='text' id='quantia' />
+<input type='button' onclick='incremento("quantia")' value='show' />
+
 <input type='text' id='myText' />
 <input type='button' onclick='notEmpty()' value='Form Checker' />

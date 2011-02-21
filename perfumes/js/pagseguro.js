@@ -111,7 +111,7 @@ PagSeguro.prototype.atualizaCarrinho = function() {
     total+=this.carrinho[i].quant*this.carrinho[i].valor
   }
   tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
-  ret += '<input type=button onclick="window.location.replace(&#8220;http://www.perfumes.incolume.com.br/#vitrinemenu&#8221;);" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
+  ret += '<input type=button onclick="window.location.replace(\"http://www.perfumes.incolume.com.br/#vitrinemenu\");" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
   ret += '<input type=button onclick="parentNode.submit()" value="Finalizar Compra" alt="Finalizar compra! " >\n'
   /*ret += '<input type="image" src="'+this.configuracoes.imgBotao+'" name="submit" alt="Finalizar compra!" />\n'*/
   ret += '</form> Sua compra garantida ou seu dinheiro de volta! <h2> </h2>'

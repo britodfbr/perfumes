@@ -24,18 +24,11 @@ function selecionaItem(coditem, elem_valor, desc, vol){
   document.getElementById(cod_item).value = elem_valor;
   document.getElementById(desc_item).value = desc + elem_valor + vol;
 }
-function selecionaRadio(coditem, elem_valor, desc, cor){
+function selecionaRadio(coditem, elem_valor, desc){
   var cod_item = "item_id_" + coditem;
   var desc_item = "item_descr_" + coditem;
-  var c = cor
-  	if(c == "undefined" || c == ""){
-  	if(elem_valor == '001'){ c = "Dourado";}
-  	if(elem_valor == '002'){ c = "Prateado";}
-  	if(elem_valor == '003'){ c = "Preto";}
-  	if(elem_valor == '004'){ c = "Vermelho";}
-  }
   document.getElementById(cod_item).value = elem_valor;
-  document.getElementById(desc_item).value = desc + c;
+  document.getElementById(desc_item).value = desc + cor;
 }
 function showmessage(msg){
   alert(msg);

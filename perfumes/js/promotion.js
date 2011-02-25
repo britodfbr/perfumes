@@ -28,7 +28,7 @@ function selecionaRadio(coditem, elem_valor, desc, cor){
   var cod_item = "item_id_" + coditem;
   var desc_item = "item_descr_" + coditem;
   var c = cor
-  	if(c == "undefied" || c == ""){
+  	if(c == "undefined" || c == ""){
   	if(elem_valor == '001'){ c = "Dourado";}
   	if(elem_valor == '002'){ c = "Prateado";}
   	if(elem_valor == '003'){ c = "Preto";}

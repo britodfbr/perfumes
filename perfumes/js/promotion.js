@@ -28,7 +28,7 @@ function selecionaRadio(coditem, elem_valor, desc){
   var cod_item = "item_id_" + coditem;
   var desc_item = "item_descr_" + coditem;
   document.getElementById(cod_item).value = elem_valor;
-  document.getElementById(desc_item).value = desc + elem_valor + document.getElementById(elem_valor).cor;
+  document.getElementById(desc_item).value = desc + elem_valor + document.getElementById(elem_valor).selected.cor;
 }
 function showmessage(msg){
   alert(msg);

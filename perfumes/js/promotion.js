@@ -29,6 +29,7 @@ function selecionaRadio(coditem, elem_valor, desc){
   var desc_item = "item_descr_" + coditem;
   document.getElementById(cod_item).value = elem_valor;
   document.getElementById(desc_item).value = desc + elem_valor;
+  alert(document.getElementById(elem_valor).cor);
 }
 function showmessage(msg){
   alert(msg);

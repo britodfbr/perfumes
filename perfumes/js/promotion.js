@@ -19,16 +19,16 @@ function validaForm(objForm){
   objForm.submit();
 }
 function selecionaItem(coditem, elem_valor, desc, vol){
-  var cod_item = "item_id_" + coditem
-  var desc_item = "item_descr_" + coditem
-  document.getElementById(cod_item).value = elem_valor
+  var cod_item = "item_id_" + coditem;
+  var desc_item = "item_descr_" + coditem;
+  document.getElementById(cod_item).value = elem_valor;
   document.getElementById(desc_item).value = desc + elem_valor + vol;
 }
 function selecionaRadio(coditem, elem_valor, desc){
-  var cod_item = "item_id_" + coditem
-  var desc_item = "item_descr_" + coditem
-  document.getElementById(cod_item).value = elem_valor
-  document.getElementById(desc_item).value = desc + elem_valor + document.getElementById(elem_valor).cor;
+  var cod_item = "item_id_" + coditem;
+  var desc_item = "item_descr_" + coditem;
+  document.getElementById(cod_item).value = elem_valor;
+  document.getElementById(desc_item).value = desc + elem_valor;
 }
 function showmessage(msg){
   alert(msg);

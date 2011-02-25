@@ -27,12 +27,15 @@ function selecionaItem(coditem, elem_valor, desc, vol){
 function selecionaRadio(coditem, elem_valor, desc, cor){
   var cod_item = "item_id_" + coditem;
   var desc_item = "item_descr_" + coditem;
-  if(elem_valor == '001'){ c = "Dourado";}
-  if(elem_valor == '002'){ c = "Prateado";}
-  if(elem_valor == '003'){ c = "Preto";}
-  if(elem_valor == '004'){ c = "Vermelho";}
+  var c = cor
+  	if(c == "undefied" || c == ""){
+  	if(elem_valor == '001'){ c = "Dourado";}
+  	if(elem_valor == '002'){ c = "Prateado";}
+  	if(elem_valor == '003'){ c = "Preto";}
+  	if(elem_valor == '004'){ c = "Vermelho";}
+  }
   document.getElementById(cod_item).value = elem_valor;
-  document.getElementById(desc_item).value = desc + elem_valor + c;
+  document.getElementById(desc_item).value = desc + c;
 }
 function showmessage(msg){
   alert(msg);

@@ -97,7 +97,7 @@ loja = {
 {'id': '02930', 'img': 'm00.png', 'descr': 'Ecssus 029 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Nat Magic Baby - infantil'},
 {'id': '02950', 'img': 'm00.png', 'descr': 'Ecssus 029 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Nat Magic Baby - infantil'},
 ],
-'Feminino' : [
+'Fem' : [
 {'id': '00130', 'img': 'm00.png', 'descr': 'Ecssus 001 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Amor Amor'},
 {'id': '00150', 'img': 'm00.png', 'descr': 'Ecssus 001 50ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Amor Amor'},
 {'id': '00330', 'img': 'm00.png', 'descr': 'Ecssus 003 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Anais Anais'},
@@ -143,7 +143,7 @@ loja = {
 {'id': '03930', 'img': 'm00.png', 'descr': 'Ecssus 039 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': '212 Sexy'},
 {'id': '03950', 'img': 'm00.png', 'descr': 'Ecssus 039 50ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': '212 Sexy'},
 ], 
-'Masculino': [
+'Masc': [
 {'id': '00230', 'img': 'm00.png', 'descr': 'Ecssus 002 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Azarro Chome'},
 {'id': '00250', 'img': 'm00.png', 'descr': 'Ecssus 002 50ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Azarro Chome'},
 {'id': '00430', 'img': 'm00.png', 'descr': 'Ecssus 004 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Bvlgari Black'},

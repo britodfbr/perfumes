@@ -1,9 +1,9 @@
 loja = {
 'Acessórios': [
-{'id': '00430', 'img': 'm00.png', 'descr': 'Ecssus 004 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Bvlgari Black'},
-{'id': '00450', 'img': 'm00.png', 'descr': 'Ecssus 004 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Bvlgari Black'},
-{'id': '00630', 'img': 'm00.png', 'descr': 'Ecssus 006 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Calvin Klein One'},
-{'id': '00650', 'img': 'm00.png', 'descr': 'Ecssus 006 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein One'},
+{'id':  'dourado', 'img': 'm00.png', 'descr':  'Porta Perfume Dourado', 'genero': 'Unissex  ', 'valor': 10.00},
+{'id': 'prateado', 'img': 'm00.png', 'descr': 'Porta Perfume Prateado', 'genero': 'Unissex  ', 'valor': 10.00},
+{'id':    'preto', 'img': 'm00.png', 'descr':    'Porta Perfume Preto', 'genero': 'Unissex  ', 'valor': 10.00},
+{'id': 'vermelho', 'img': 'm00.png', 'descr': 'Porta Perfume Vermelho', 'genero': 'Unissex  ', 'valor': 10.00},
 ],
 '30ml': [
 {'id': '00130', 'img': 'm00.png', 'descr': 'Ecssus 001 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Amor Amor'},

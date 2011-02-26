@@ -181,12 +181,12 @@ loja = {
 {'id': '04030', 'img': 'm00.png', 'descr': 'Ecssus 040 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Strong Man'},
 {'id': '04050', 'img': 'm00.png', 'descr': 'Ecssus 040 50ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Strong Man'},
 ],
-'Unissex': [
+'Acessórios': [
 {'id': '00430', 'img': 'm00.png', 'descr': 'Ecssus 004 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Bvlgari Black'},
 {'id': '00450', 'img': 'm00.png', 'descr': 'Ecssus 004 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Bvlgari Black'},
 {'id': '00630', 'img': 'm00.png', 'descr': 'Ecssus 006 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Calvin Klein One'},
 {'id': '00650', 'img': 'm00.png', 'descr': 'Ecssus 006 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein One'},
 {'id': '02930', 'img': 'm00.png', 'descr': 'Ecssus 029 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Nat Magic Baby - infantil'},
 {'id': '02950', 'img': 'm00.png', 'descr': 'Ecssus 029 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Nat Magic Baby - infantil'},
-],
+]
 } 

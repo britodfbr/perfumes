@@ -7,7 +7,7 @@ loja = {
 ],
 '30ml': [
 {'id': '00130', 'img': 'm00.png', 'descr': 'Ecssus 001 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Amor Amor'},
-{'id': '00230', 'img': 'm00.png', 'descr': 'Ecssus 002 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Azarro Chome'},
+{'id': '00230', 'img': 'm00.png', 'descr': 'Ecssus 002 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Azarro Chrome'},
 {'id': '00330', 'img': 'm00.png', 'descr': 'Ecssus 003 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Anais Anais'},
 {'id': '00430', 'img': 'm00.png', 'descr': 'Ecssus 004 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Bvlgari Black'},
 {'id': '00530', 'img': 'm00.png', 'descr': 'Ecssus 005 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Angel'},
@@ -49,7 +49,7 @@ loja = {
 ],
 '50ml': [
 {'id': '00150', 'img': 'm00.png', 'descr': 'Ecssus 001 50ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Amor Amor'},
-{'id': '00250', 'img': 'm00.png', 'descr': 'Ecssus 002 50ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Azarro Chome'},
+{'id': '00250', 'img': 'm00.png', 'descr': 'Ecssus 002 50ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Azarro Chrome'},
 {'id': '00350', 'img': 'm00.png', 'descr': 'Ecssus 003 50ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Anais Anais'},
 {'id': '00450', 'img': 'm00.png', 'descr': 'Ecssus 004 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Bvlgari Black'},
 {'id': '00550', 'img': 'm00.png', 'descr': 'Ecssus 005 50ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Angel'},
@@ -144,8 +144,8 @@ loja = {
 {'id': '03950', 'img': 'm00.png', 'descr': 'Ecssus 039 50ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': '212 Sexy'},
 ], 
 'Masc': [
-{'id': '00230', 'img': 'm00.png', 'descr': 'Ecssus 002 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Azarro Chome'},
-{'id': '00250', 'img': 'm00.png', 'descr': 'Ecssus 002 50ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Azarro Chome'},
+{'id': '00230', 'img': 'm00.png', 'descr': 'Ecssus 002 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Azarro Chrome'},
+{'id': '00250', 'img': 'm00.png', 'descr': 'Ecssus 002 50ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Azarro Chrome'},
 {'id': '00430', 'img': 'm00.png', 'descr': 'Ecssus 004 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Bvlgari Black'},
 {'id': '00450', 'img': 'm00.png', 'descr': 'Ecssus 004 50ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Bvlgari Black'},
 {'id': '00630', 'img': 'm00.png', 'descr': 'Ecssus 006 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Calvin Klein One'},

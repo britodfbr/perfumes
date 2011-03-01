@@ -30,12 +30,11 @@ function showmessage(msg){
 function CheckAll(chk){
   for (i = 0; i < chk.length; i++)
     chk[i].checked = true ;
-  checkItem();
+  checkItem(true);
 }
 function UnCheckAll(chk){
   for (i = 0; i < chk.length; i++)
     chk[i].checked = false ;
-  document.getElementById('produtos').innerHTML = '';
   checkItem();
 }
 function freteOff(obj,valor){

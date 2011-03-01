@@ -35,6 +35,7 @@ function CheckAll(chk){
 function UnCheckAll(chk){
   for (i = 0; i < chk.length; i++)
     chk[i].checked = false ;
+  document.getElementById('produtos').innerHTML = '';
   checkItem();
 }
 function freteOff(obj,valor){
@@ -89,5 +90,5 @@ function checkItem(ocultar){
 		    cod_item = document.form.item_id.value; /* fazer conforme o outro script usado com o select */
 	}
 	//document.write(prod);
-	document.getElementById('produtos').innerHTML = count + ' Selecionado(s) ' + compra;
+	document.getElementById('produtos').innerHTML = count + ' Selecionado(s) <br />' + compra;
 }

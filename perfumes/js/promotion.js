@@ -89,5 +89,5 @@ function checkItem(ocultar){
 		    cod_item = document.form.item_id.value; /* fazer conforme o outro script usado com o select */
 	}
 	//document.write(prod);
-	document.getElementById('produtos').innerHTML = compra + count;
+	document.getElementById('produtos').innerHTML = count + ' Selecionado(s) ' + compra;
 }

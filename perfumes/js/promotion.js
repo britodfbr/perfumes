@@ -62,7 +62,7 @@ function checkItem(ocultar){
 			}else if (count > 1 && count <=2){
 			  valor='850';
 			}else if (count > 2 && count <=3){
-			  valor='750';
+			  valor='800';
 			}else if (count > 3 && count <=4){
 			  valor='700';
 			}else if (count > 4 && count <=5){

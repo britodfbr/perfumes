@@ -40,12 +40,16 @@ function UnCheckAll(chk){
 function freteOff(obj,valor){
   document.getElementById(obj).value = valor;
 }
-function checkItem(){
+function checkItem(ocultar){
 	check = document.form.item_id;
         freteOff('extras','');
 	cod_item = "";
 	compra = "";
 	count = "";
+	ver='';
+        if(ocultar){
+	 ver='hidden';
+	}
 	if(check.length){
 		for (i = 0; i < check.length; i++){
 		    if(check[i].checked){
@@ -67,12 +71,12 @@ function checkItem(){
 			  valor='500';
 			}
 			   //document.getElementById(nome_campo).value = cod_item;	/* fazer conforme o outro script usado com o select */
-			   prod = '<input type="" size="" name="item_id_'+  count  +'" id="item_id_' +  count  +'" value="'+ cod_item +'" />'
-  			   prod = prod + '<input type="" size="" name="item_descr_'+ count +'" id="item_descr_'+ count +'" value="Ecssus '+ cod_item+' 5ml" />'
-			   prod = prod + '<input type="" size="" name="item_quant_'+ count +'" id="item_quant_'+ count +'" value="1" />'
-			   prod = prod + '<input type="" size="" name="item_valor_'+ count +'" id="item_valor_'+ count +'" value="'+valor+'" />'
-			   prod = prod + '<input type="" size="" name="item_frete_'+ count +'" id="item_frete_'+ count +'" value="1000" />'
-			   prod = prod + '<input type="" size="" name="item_peso_'+ count +'" id=" item_peso_'+ count +'" value="0" /> <br />'
+			   prod = '<input type="'+ver+'" size="" name="item_id_'+  count  +'" id="item_id_' +  count  +'" value="'+ cod_item +'" />'
+  			   prod = prod + '<input type="'+ver+'" size="" name="item_descr_'+ count +'" id="item_descr_'+ count +'" value="Ecssus '+ cod_item+' 5ml" />'
+			   prod = prod + '<input type="'+ver+'" size="" name="item_quant_'+ count +'" id="item_quant_'+ count +'" value="1" />'
+			   prod = prod + '<input type="'+ver+'" size="" name="item_valor_'+ count +'" id="item_valor_'+ count +'" value="'+valor+'" />'
+			   prod = prod + '<input type="'+ver+'" size="" name="item_frete_'+ count +'" id="item_frete_'+ count +'" value="1000" />'
+			   prod = prod + '<input type="'+ver+'" size="" name="item_peso_'+ count +'" id=" item_peso_'+ count +'" value="0" /> <br />'
 			   compra = compra + prod;
 		    }
 		}

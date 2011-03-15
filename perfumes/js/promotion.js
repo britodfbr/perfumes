@@ -76,7 +76,7 @@ function checkItem(ocultar){
 			   prod = prod + '<input type="'+ver+'" size="" name="item_quant_'+ count +'" id="item_quant_'+ count +'" value="1" />'
 			   prod = prod + '<input type="'+ver+'" size="" name="item_valor_'+ count +'" id="item_valor_'+ count +'" value="'+valor+'" />'
 			   prod = prod + '<input type="'+ver+'" size="" name="item_frete_'+ count +'" id="item_frete_'+ count +'" value="1000" />'
-			   prod = prod + '<input type="'+ver+'" size="" name="item_peso_'+ count +'" id=" item_peso_'+ count +'" value="0" /> <br />'
+			   prod = prod + '<input type="'+ver+'" size="" name="item_peso_'+ count +'" id=" item_peso_'+ count +'" value="1" /> <br />'
 			   compra = compra + prod;
 		    }
 		}

@@ -30,25 +30,25 @@ function showmessage(msg){
 function CheckAll(chk){
   for (i = 0; i < chk.length; i++)
     chk[i].checked = true ;
-  checkItem(true);
 }
 function UnCheckAll(chk){
   for (i = 0; i < chk.length; i++)
     chk[i].checked = false ;
-  checkItem();
 }
 function freteOff(obj,valor){
   document.getElementById(obj).value = valor;
 }
-function checkItem(ocultar){
+function checkItem(ocultar,peso){
 	check = document.form.item_id;
         freteOff('extras','');
 	cod_item = "";
 	compra = "";
 	count = "";
-	ver='';
-        if(ocultar){
+        ver='';
+	if(ocultar){
 	 ver='hidden';
+	} else{
+	 ver=''
 	}
 	if(check.length){
 		for (i = 0; i < check.length; i++){
@@ -62,7 +62,7 @@ function checkItem(ocultar){
 			}else if (count > 1 && count <=2){
 			  valor='850';
 			}else if (count > 2 && count <=3){
-			  valor='800';
+			  valor='750';
 			}else if (count > 3 && count <=4){
 			  valor='700';
 			}else if (count > 4 && count <=5){
@@ -76,18 +76,19 @@ function checkItem(ocultar){
 			   prod = prod + '<input type="'+ver+'" size="" name="item_quant_'+ count +'" id="item_quant_'+ count +'" value="1" />'
 			   prod = prod + '<input type="'+ver+'" size="" name="item_valor_'+ count +'" id="item_valor_'+ count +'" value="'+valor+'" />'
 			   prod = prod + '<input type="'+ver+'" size="" name="item_frete_'+ count +'" id="item_frete_'+ count +'" value="1000" />'
-			   prod = prod + '<input type="'+ver+'" size="" name="item_peso_'+ count +'" id=" item_peso_'+ count +'" value="1" /> <br />'
+			   prod = prod + '<input type="'+ver+'" size="" name="item_peso_'+ count +'" id=" item_peso_'+ count +'" value="'+peso+'" /> <br />'
 			   compra = compra + prod;
 		    }
 		}
 		if (count >= 3){
 		   c = (count -1)*5+10
-		   //freteOff('extras',c*-100) /*desconto para frete fixo*/
+		   //freteOff('extras',c*-100)/*Desconto no frete fixo*/
+		   //freteOff('extras',600)/*acrescimo embalagem no frete fixo*/
 		}
 	}else{
 		if(check.checked)
 		    cod_item = document.form.item_id.value; /* fazer conforme o outro script usado com o select */
 	}
 	//document.write(prod);
-	document.getElementById('produtos').innerHTML = count + ' Selecionado(s) <br />' + compra;
+	document.getElementById('produtos').innerHTML = compra + count;
 }

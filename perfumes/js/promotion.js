@@ -82,7 +82,7 @@ function checkItem(ocultar){
 		}
 		if (count >= 3){
 		   c = (count -1)*5+10
-		   freteOff('extras',c*-100)
+		   //freteOff('extras',c*-100) /*desconto para frete fixo*/
 		}
 	}else{
 		if(check.checked)

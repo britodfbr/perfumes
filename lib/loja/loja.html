@@ -4,11 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="pt-BR">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <title>Revenda autorizada Ecssus Prime</title>
-    <script language="JavaScript" type="text/javascript" src="https://incolume.googlecode.com/svn/trunk/lib/loja/configuracoes.js"></script>
-    <script language="JavaScript" type="text/javascript" src="https://incolume.googlecode.com/svn/trunk/lib/loja/loja.js"></script>
-    <script language="JavaScript" type="text/javascript" src="https://incolume.googlecode.com/svn/trunk/lib/loja/pagseguro.js"></script>
-	  <link rel="stylesheet" href="style.css" type="text/css" media="Screen" />
+    <title>Revenda autorizada Incólume</title>
+    <script language="JavaScript" type="text/javascript" src="loja.js"></script>
   </head>
   <body>
     <h1 id="titulo">
@@ -19,4 +16,202 @@
     <div id="main"></div>
     <div id="carrinho"></div>
   </body>
+
+<script>
+configuracoes = {
+  email       : 'vendas@perfumes.incolume.com.br',
+  moeda       : 'BRL', // Atualmente o PagSeguro só suporta (BRL) Brasil - Real
+  //tipofrete   : 'EN', // Se esta opção for definida (é opcional), 
+                      // use frete nas configurações para frete unico por 
+                      // item ou um tipo de frete para cada produto
+                      // 
+                      // Aqui você deverá informar EN para PAC ou SD para Sedex
+                      // Não se esqueça de definir suas opções no seu Admin do PagSeguro
+  frete       : 10,
+  //peso        : 1,
+  id_menu     : 'menu',
+  id_main     : 'main',
+  id_carrinho : 'carrinho',
+  img_base    : 'https://incolume.googlecode.com/svn/trunk/imagens/', 
+  imagem      : true,
+  imgBotao    : 'https://pagseguro.uol.com.br/Security/Imagens/btnFinalizar.jpg',
+  inicio     : 'Unissex'
+}
+
+PagSeguro = function (configuracoes, loja) {
+  this.configuracoes = configuracoes
+  this.loja = loja
+  this.carrinho = {}
+  this.menu(document.getElementById(this.configuracoes.id_menu))
+  this.main(this.configuracoes.inicio, document.getElementById(this.configuracoes.id_main))
+  setTimeout(this.atualizaCarrinho, 1)
+}
+
+PagSeguro.prototype.menu = function(elm) {
+  ret='<ul>'
+  for (i in this.loja)
+    ret+='<li><a href="#" onclick="pgs.main(\''+i+'\', document.getElementById(pgs.configuracoes.id_main)); return false">'+i+'</a></li>'
+  ret+='</ul>'
+  if (elm==undefined) document.write(ret)
+  else elm.innerHTML = ret
+}
+
+PagSeguro.prototype.main = function(grupo, elm) {
+  var item
+  var ret
+
+/*  ret = '<h2>'+grupo+'</h2>'
+
+  for (var i=0;i<this.loja[grupo].length;i++) {
+    item = this.loja[grupo][i]
+    ret += '<dl>'
+    ret += '<dt>'+item.descr+'</dt>'
+    if (this.configuracoes.imagem)
+      ret += '<dd class="imagem"><img src="'+this.configuracoes.img_base+item.img+this.configuracoes.formatoimg+'" /></dd>'
+    ret += '<dd class="referencia"><span>Referência olfativa:</span> '+item.ref+'</dd>'
+    ret += '<dd class="referencia"><span>Gênero:</span> '+item.genero+'</dd>'
+    ret += '<dd class="preco"><span>Preço:</span> '+this.moeda(item.valor)+'</dd>'
+    ret += '<dd class="link"><a href="#" onclick="pgs.adicionar(\''+grupo+'\', \''+item.id+'\');pgs.atualizaCarrinho();return false">adicionar</a></dd>'
+    ret += '</dl>'
+  }
+*/
+	ret = "<select name='v1' id='v1'> "
+	ret += "  <option value='30ml' > 30ml </option>"
+	ret += "  <option value='50ml' selected > 50ml </option>"
+	ret += "</select>";
+	ret += "<select name='p1' id='p1' onchange=''>"
+	ret += "  <option value='' SELECTED >  </option>"
+	ret += "  <option value='001'> #01 - Amor Amor </option>"
+	ret += "  <option value='002'> #02 - Azarro Chrome </option>"
+	ret += "  <option value='003'> #03 - Anais Anais </option>"
+	ret += "  <option value='004'> #04 - Bulgari Black (unissex) </option>"
+	ret += "  <option value='005'> #05 - Angel </option>"
+	ret += "  <option value='006'> #06 - Calvin Klein One (unissex) </option>"
+	ret += "  <option value='007'> #07 - Carolina Herreira </option>"
+	ret += "  <option value='008'> #08 - Dolce &#38; Gabana </option>"
+	ret += "  <option value='009'> #09 - Chance </option>"
+	ret += "  <option value='010'> #10 - Eternity </option>"
+	ret += "  <option value='011'> #11 - Channel n&#186;5 </option>"
+	ret += "  <option value='012'> #12 - Ferrari Black </option>"
+	ret += "  <option value='013'> #13 - Dolce &#38; Gabana </option>"
+	ret += "  <option value='014'> #14 - Ferrari Red </option>"
+	ret += "  <option value='015'> #15 - Eternity </option>"
+	ret += "  <option value='016'> #16 - Hugo Boss </option>"
+	ret += "  <option value='017'> #17 - Flower </option>"
+	ret += "  <option value='018'> #18 - Joop Night Flight </option>"
+	ret += "  <option value='019'> #19 - Gabriela Sabatini </option>"
+	ret += "  <option value='020'> #20 - Kouros </option>"
+	ret += "  <option value='021'> #21 - Hipnose </option>"
+	ret += "  <option value='022'> #22 - Kouros Fraugher </option>"
+	ret += "  <option value='023'> #23 - J&#39;Adore </option>"
+	ret += "  <option value='024'> #24 - Le Malle </option>"
+	ret += "  <option value='025'> #25 - Laguna </option>"
+	ret += "  <option value='026'> #26 - L&#39;Eau D&#39;Issey Homme </option>"
+	ret += "  <option value='027'> #27 - Mont Blac Presence </option>"
+	ret += "  <option value='028'> #28 - Minotaure </option>"
+	ret += "  <option value='029'> #29 - Nat Magic Baby (Unissex/infantil) </option>"
+	ret += "  <option value='030'> #30 - Mont Blac Presence </option>"
+	ret += "  <option value='031'> #31 - Paris </option>"
+	ret += "  <option value='032'> #32 - Pi Givanchi </option>"
+	ret += "  <option value='033'> #33 - Polo Sport </option>"
+	ret += "  <option value='034'> #34 - Polo Blue </option>"
+	ret += "  <option value='035'> #35 - Ralf For Womam </option>"
+	ret += "  <option value='036'> #36 - Polo Sport </option>"
+	ret += "  <option value='037'> #37 - Sense </option>"
+	ret += "  <option value='038'> #38 - Polo Verde </option>"
+	ret += "  <option value='039'> #39 - 212 - Sexy </option>"
+	ret += "  <option value='040'> #40 - Strong Man </option>"
+  elm.innerHTML = ret
+}
+
+PagSeguro.prototype.adicionar = function(grupo, id) {
+  for (i in this.loja[grupo])
+    if (this.loja[grupo][i].id == id)
+      var item = this.loja[grupo][i]
+  if (item==undefined) return
+
+  for (i in this.carrinho) {
+    if (String(i)==String(item.id)) {
+      this.carrinho[i].quant++
+      return
+    }
+  }
+  this.carrinho[item.id] = {
+    'id'    : item.id,
+    'descr' : item.descr,
+    'valor' : item.valor,
+    'quant' : 1
+  }
+  if (item.peso)
+    this.carrinho[item.id].peso = item.peso
+  if (item.frete)
+    this.carrinho[item.id].frete = item.frete
+}
+
+PagSeguro.prototype.remover = function(id) {
+  for (i in this.carrinho) {
+    if (String(i)==String(id)) {
+      this.carrinho[i].quant--
+      if (this.carrinho[i].quant==0)
+        delete this.carrinho[i]
+    }
+  }
+}
+
+
+PagSeguro.prototype.atualizaCarrinho = function() {
+  var x=total=0
+  var tabela = '<table><thead><th>Quantidade</th><th>Descrição</th><th>Valor Unitário</th><th>Valor Final</th></tr></thead><tbody>'
+  var ret = '<form action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="POST" target="pagseguro">\n'
+  ret += '<input type="hidden" name="email_cobranca" value="'+this.configuracoes.email+'" />'
+  ret += '<input type="hidden" name="moeda" value="'+this.configuracoes.moeda+'" />'
+  ret += '<input type="hidden" name="tipo" value="CP" />'
+  ret += '<input type="hidden" name="encoding" value="utf-8" />'
+
+
+  for (i in this.carrinho) {
+    if (this.carrinho[i]==undefined || this.carrinho[i].descr==undefined) continue
+    x++
+    if (this.configuracoes.peso)
+      ret += '<input type="hidden" name="item_peso_'+x+'" value="'+pgs.valor(this.configuracoes.peso)+'" />'
+  
+    if (this.configuracoes.frete)
+      ret += '<input type="hidden" name="item_frete_'+x+'" value="'+pgs.valor(this.configuracoes.frete)+'" />'
+  
+    if (this.configuracoes.tipofrete)
+      ret += '<input type="hidden" name="item_tipo_frete" value="'+this.configuracoes.tipofrete+'" />'
+
+    ret += '<input type="hidden" name="item_id_'+x+'" value="'+this.carrinho[i].id+'"  />\n'
+    ret += '<input type="hidden" name="item_descr_'+x+'" value="'+this.carrinho[i].descr+'"  />\n'
+    ret += '<input type="hidden" name="item_valor_'+x+'" value="'+pgs.valor(this.carrinho[i].valor)+'"  />\n'
+    ret += '<input type="hidden" name="item_quant_'+x+'" value="'+this.carrinho[i].quant+'"  />\n'
+
+    if (this.carrinho[i].peso && !this.configuracoes.peso)
+      ret += '<input type="hidden" name="item_peso_'+x+'" value="'+pgs.valor(this.carrinho[i].peso)+'"  />\n'
+
+    if (this.carrinho[i].frete && !this.configuracoes.frete)
+      ret += '<input type="hidden" name="item_frete_'+x+'" value="'+pgs.valor(this.carrinho[i].frete)+'"  />\n'
+
+    tabela += '<tr><td>'+this.carrinho[i].quant+'</td><td>'+this.carrinho[i].descr+'</td><td>'+this.moeda(this.carrinho[i].valor)+'</td><td>'+this.moeda(this.carrinho[i].quant*this.carrinho[i].valor)+'</td><td><a href="#" onclick="pgs.remover(\''+this.carrinho[i].id+'\');pgs.atualizaCarrinho(); return false">remover</a></td></tr>'
+    total+=this.carrinho[i].quant*this.carrinho[i].valor
+  }
+  tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
+  ret += '<input type="image" src="'+this.configuracoes.imgBotao+'" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />\n'
+  ret += '</form>'
+  document.getElementById(this.configuracoes.id_carrinho).innerHTML = tabela+ret
+}
+
+PagSeguro.prototype.moeda = function(valor) {
+  return 'R$ ' + Number(valor).toFixed(2).replace(/[^\d]/, ',')
+}
+
+PagSeguro.prototype.valor = function(valor) {
+  return Number(valor).toFixed(2).replace(/[^\d]/, '')
+}
+
+
+window.onload=function() {
+  pgs=new PagSeguro(configuracoes, loja)
+}
+</script>
 </html>

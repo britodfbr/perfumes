@@ -5,16 +5,218 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title>Revenda autorizada Incólume</title>
-    <script language="JavaScript" type="text/javascript" src="loja.js"></script>
+	  <link rel="stylesheet" href="style.css" type="text/css" media="Screen" />
   </head>
   <body>
     <h1 id="titulo">
       Loja Perfumes Incolume
     </h1>
     <h3 id='subtitulo'> Revendedor Ecssus Prime </h3>
-    <div id="menu"></div>
-    <div id="main"></div>
-    <div id="carrinho"></div>
+    <div id="menuRevenda"></div>
+    <div id="mainRevenda"></div>
+    <div id="carrinhoRevenda"></div>
+
+<script>
+Revenda = function (configuracoes, loja) {
+  this.configuracoes = configuracoes
+  this.loja = loja
+  this.carrinho = {}
+  this.menu(document.getElementById(this.configuracoes.id_menu))
+  this.main(this.configuracoes.inicio, document.getElementById(this.configuracoes.id_main))
+  setTimeout(this.atualizaCarrinho, 1)
+}
+
+Revenda.prototype.menu = function(elm) {
+  ret='<ul>'
+  for (i in this.loja)
+    ret+='<li><a href="#" onclick="pgs.main(\''+i+'\', document.getElementById(pgs.configuracoes.id_main)); return false">'+i+'</a></li>'
+  ret+='</ul>'
+  if (elm==undefined) document.write(ret)
+  else elm.innerHTML = ret
+}
+
+Revenda.prototype.main = function(grupo, elm) {
+  var item
+  var ret
+
+  ret = '<h2>'+grupo+'</h2>'
+
+  for (var i=0;i<this.loja[grupo].length;i++) {
+    item = this.loja[grupo][i]
+    ret += '<dl>'
+    ret += '<dt>'+item.descr+'</dt>'
+    if (this.configuracoes.imagem)
+      ret += '<dd class="imagem"><img src="'+this.configuracoes.img_base+item.img+this.configuracoes.formatoimg+'" /></dd>'
+    ret += '<dd class="referencia"><span>Referência olfativa:</span> '+item.ref+'</dd>'
+    ret += '<dd class="referencia"><span>Gênero:</span> '+item.genero+'</dd>'
+    ret += '<dd class="preco"><span>Preço:</span> '+this.moeda(item.valor)+'</dd>'
+    ret += '<dd class="link"><a href="#" onclick="pgs.adicionar(\''+grupo+'\', \''+item.id+'\');pgs.atualizaCarrinho();return false">adicionar</a></dd>'
+    ret += '</dl>'
+  }
+
+  elm.innerHTML = ret
+}
+
+Revenda.prototype.adicionar = function(grupo, id) {
+  for (i in this.loja[grupo])
+    if (this.loja[grupo][i].id == id)
+      var item = this.loja[grupo][i]
+  if (item==undefined) return
+
+  for (i in this.carrinho) {
+    if (String(i)==String(item.id)) {
+      this.carrinho[i].quant++
+      return
+    }
+  }
+  this.carrinho[item.id] = {
+    'id'    : item.id,
+    'descr' : item.descr,
+    'valor' : item.valor,
+    'quant' : 1
+  }
+  if (item.peso)
+    this.carrinho[item.id].peso = item.peso
+  if (item.frete)
+    this.carrinho[item.id].frete = item.frete
+}
+
+Revenda.prototype.remover = function(id) {
+  for (i in this.carrinho) {
+    if (String(i)==String(id)) {
+      this.carrinho[i].quant--
+      if (this.carrinho[i].quant==0)
+        delete this.carrinho[i]
+    }
+  }
+}
+
+
+Revenda.prototype.atualizaCarrinho = function() {
+  var x=total=0
+  var tabela = '<table><thead><th>Quantidade</th><th>Descrição</th><th>Valor Unitário</th><th>Valor Final</th></tr></thead><tbody>'
+  var ret = '<form action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="POST" target="pagseguro">\n'
+  ret += '<input type="hidden" name="email_cobranca" value="'+this.configuracoes.email+'" />'
+  ret += '<input type="hidden" name="moeda" value="'+this.configuracoes.moeda+'" />'
+  ret += '<input type="hidden" name="tipo" value="CP" />'
+  ret += '<input type="hidden" name="encoding" value="utf-8" />'
+
+
+  for (i in this.carrinho) {
+    if (this.carrinho[i]==undefined || this.carrinho[i].descr==undefined) continue
+    x++
+    if (this.configuracoes.peso)
+      ret += '<input type="hidden" name="item_peso_'+x+'" value="'+pgs.valor(this.configuracoes.peso)+'" />'
+  
+    if (this.configuracoes.frete)
+      ret += '<input type="hidden" name="item_frete_'+x+'" value="'+pgs.valor(this.configuracoes.frete)+'" />'
+  
+    if (this.configuracoes.tipofrete)
+      ret += '<input type="hidden" name="item_tipo_frete" value="'+this.configuracoes.tipofrete+'" />'
+
+    ret += '<input type="hidden" name="item_id_'+x+'" value="'+this.carrinho[i].id+'"  />\n'
+    ret += '<input type="hidden" name="item_descr_'+x+'" value="'+this.carrinho[i].descr+'"  />\n'
+    ret += '<input type="hidden" name="item_valor_'+x+'" value="'+pgs.valor(this.carrinho[i].valor)+'"  />\n'
+    ret += '<input type="hidden" name="item_quant_'+x+'" value="'+this.carrinho[i].quant+'"  />\n'
+
+    if (this.carrinho[i].peso && !this.configuracoes.peso)
+      ret += '<input type="hidden" name="item_peso_'+x+'" value="'+pgs.valor(this.carrinho[i].peso)+'"  />\n'
+
+    if (this.carrinho[i].frete && !this.configuracoes.frete)
+      ret += '<input type="hidden" name="item_frete_'+x+'" value="'+pgs.valor(this.carrinho[i].frete)+'"  />\n'
+
+    tabela += '<tr><td>'+this.carrinho[i].quant+'</td><td>'+this.carrinho[i].descr+'</td><td>'+this.moeda(this.carrinho[i].valor)+'</td><td>'+this.moeda(this.carrinho[i].quant*this.carrinho[i].valor)+'</td><td><a href="#" onclick="pgs.remover(\''+this.carrinho[i].id+'\');pgs.atualizaCarrinho(); return false">remover</a></td></tr>'
+    total+=this.carrinho[i].quant*this.carrinho[i].valor
+  }
+  tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
+  ret += '<input type="image" src="'+this.configuracoes.imgBotao+'" name="submit" alt="Pague com Revenda - é rápido, grátis e seguro!" />\n'
+  ret += '</form>'
+  document.getElementById(this.configuracoes.id_carrinho).innerHTML = tabela+ret
+}
+
+Revenda.prototype.moeda = function(valor) {
+  return 'R$ ' + Number(valor).toFixed(2).replace(/[^\d]/, ',')
+}
+
+Revenda.prototype.valor = function(valor) {
+  return Number(valor).toFixed(2).replace(/[^\d]/, '')
+}
+
+
+window.onload=function() {
+  pgs=new Revenda(configuracoes, loja)
+}
+configuracoes = {
+  email       : 'vendas@perfumes.incolume.com.br',
+  moeda       : 'BRL', // Atualmente o Revenda só suporta (BRL) Brasil - Real
+  //tipofrete   : 'EN', // Se esta opção for definida (é opcional), 
+                      // use frete nas configurações para frete unico por 
+                      // item ou um tipo de frete para cada produto
+                      // 
+                      // Aqui você deverá informar EN para PAC ou SD para Sedex
+                      // Não se esqueça de definir suas opções no seu Admin do Revenda
+  frete       : 10,
+  //peso        : 1,
+  id_menu     : 'menuRevenda',
+  id_main     : 'mainRevenda',
+  id_carrinho : 'carrinhoRevenda',
+  img_base    : 'https://incolume.googlecode.com/svn/trunk/imagens/', 
+  imagem      : true,
+  formatoimg  : '',
+  imgBotao    : 'https://pagseguro.uol.com.br/Security/Imagens/btnFinalizar.jpg',
+  inicio     : '30ml'
+}
+loja = {
+'Acessórios': [
+{'id':  'dourado', 'img': 'm00.png', 'descr':  'Porta Perfume Dourado', 'genero': 'Unissex  ', 'valor': 10.00, 'ref':'n/a'},
+{'id': 'prateado', 'img': 'm00.png', 'descr': 'Porta Perfume Prateado', 'genero': 'Unissex  ', 'valor': 10.00, 'ref':'n/a'},
+{'id':    'preto', 'img': 'm00.png', 'descr':    'Porta Perfume Preto', 'genero': 'Unissex  ', 'valor': 10.00, 'ref':'n/a'},
+{'id': 'vermelho', 'img': 'm00.png', 'descr': 'Porta Perfume Vermelho', 'genero': 'Unissex  ', 'valor': 10.00, 'ref':'n/a'},
+],
+'30ml': [
+{'id': '00130', 'img': 'm00.png', 'descr': 'Ecssus 001 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Amor Amor'},
+{'id': '00230', 'img': 'm00.png', 'descr': 'Ecssus 002 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Azarro Chrome'},
+{'id': '00330', 'img': 'm00.png', 'descr': 'Ecssus 003 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Anais Anais'},
+{'id': '00430', 'img': 'm00.png', 'descr': 'Ecssus 004 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Bvlgari Black'},
+{'id': '00530', 'img': 'm00.png', 'descr': 'Ecssus 005 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Angel'},
+{'id': '00630', 'img': 'm00.png', 'descr': 'Ecssus 006 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Calvin Klein One'},
+{'id': '00730', 'img': 'm00.png', 'descr': 'Ecssus 007 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Carolina Herreira'},
+{'id': '00830', 'img': 'm00.png', 'descr': 'Ecssus 008 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Dolce &#38; Gabana'},
+{'id': '00930', 'img': 'm00.png', 'descr': 'Ecssus 009 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Chance'},
+{'id': '01030', 'img': 'm00.png', 'descr': 'Ecssus 010 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Eternity'},
+{'id': '01130', 'img': 'm00.png', 'descr': 'Ecssus 011 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Channel n&#186;5'},
+{'id': '01230', 'img': 'm00.png', 'descr': 'Ecssus 012 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Ferrari Black'},
+{'id': '01330', 'img': 'm00.png', 'descr': 'Ecssus 013 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Dolce &#38; Gabana'},
+{'id': '01430', 'img': 'm00.png', 'descr': 'Ecssus 014 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Ferrari Red'},
+{'id': '01530', 'img': 'm00.png', 'descr': 'Ecssus 015 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Eternity'},
+{'id': '01630', 'img': 'm00.png', 'descr': 'Ecssus 016 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Hugo Boss'},
+{'id': '01730', 'img': 'm00.png', 'descr': 'Ecssus 017 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Flower'},
+{'id': '01830', 'img': 'm00.png', 'descr': 'Ecssus 018 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Joop Night Flight'},
+{'id': '01930', 'img': 'm00.png', 'descr': 'Ecssus 019 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Gabriela Sabatini'},
+{'id': '02030', 'img': 'm00.png', 'descr': 'Ecssus 020 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Kouros'},
+{'id': '02130', 'img': 'm00.png', 'descr': 'Ecssus 021 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Hipnose'},
+{'id': '02230', 'img': 'm00.png', 'descr': 'Ecssus 022 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Kouros Fraugher'},
+{'id': '02330', 'img': 'm00.png', 'descr': 'Ecssus 023 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'J&#39;Adore'},
+{'id': '02430', 'img': 'm00.png', 'descr': 'Ecssus 024 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Le Malle'},
+{'id': '02530', 'img': 'm00.png', 'descr': 'Ecssus 025 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Laguna'},
+{'id': '02630', 'img': 'm00.png', 'descr': 'Ecssus 026 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'L&#39;Eau Dissey Homme'},
+{'id': '02730', 'img': 'm00.png', 'descr': 'Ecssus 027 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Mont Blac Presence'},
+{'id': '02830', 'img': 'm00.png', 'descr': 'Ecssus 028 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Minotaure'},
+{'id': '02930', 'img': 'm00.png', 'descr': 'Ecssus 029 30ml', 'genero': 'Unissex  ', 'valor': 33.00, 'ref': 'Nat Magic Baby (Infantil)'},
+{'id': '03030', 'img': 'm00.png', 'descr': 'Ecssus 030 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Mont Blac Presence'},
+{'id': '03130', 'img': 'm00.png', 'descr': 'Ecssus 031 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Paris'},
+{'id': '03230', 'img': 'm00.png', 'descr': 'Ecssus 032 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Pi Givanchi'},
+{'id': '03330', 'img': 'm00.png', 'descr': 'Ecssus 033 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Polo Sport'},
+{'id': '03430', 'img': 'm00.png', 'descr': 'Ecssus 034 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Polo Blue'},
+{'id': '03530', 'img': 'm00.png', 'descr': 'Ecssus 035 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Ralf For Womam'},
+{'id': '03630', 'img': 'm00.png', 'descr': 'Ecssus 036 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Polo Sport'},
+{'id': '03730', 'img': 'm00.png', 'descr': 'Ecssus 037 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': 'Sense'},
+{'id': '03830', 'img': 'm00.png', 'descr': 'Ecssus 038 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Polo Verde'},
+{'id': '03930', 'img': 'm00.png', 'descr': 'Ecssus 039 30ml', 'genero': 'Feminino ', 'valor': 33.00, 'ref': '212 Sexy'},
+{'id': '04030', 'img': 'm00.png', 'descr': 'Ecssus 040 30ml', 'genero': 'Masculino', 'valor': 33.00, 'ref': 'Strong Man'}
+]}
+</script>
+
   </body>
 
 <script>

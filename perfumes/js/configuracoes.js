@@ -9,8 +9,8 @@ configuracoes = {
                       // 
                       // Aqui você deverá informar EN para PAC ou SD para Sedex
                       // Não se esqueça de definir suas opções no seu Admin do PagSeguro
-  frete       : 15,
-  peso        : 600,
+//  frete       : 15,
+  peso        : 1700,
 
   // Abaixo, coloque as referencias aos seus elementos do HTML
   id_menu     : 'vitrinemenu',

@@ -45,11 +45,11 @@ loja = {
 {'id': '03730', 'img': 'm00.png', 'descr': 'Ecssus 037 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Sense'},
 {'id': '03830', 'img': 'm00.png', 'descr': 'Ecssus 038 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Polo Verde'},
 {'id': '03930', 'img': 'm00.png', 'descr': 'Ecssus 039 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': '212 Sexy'},
-{'id': '04030', 'img': 'm00.png', 'descr': 'Ecssus 040 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Strong Man'}
-{'id': '04130', 'img': 'm00.png', 'descr': 'Ecssus 041 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Fantasy'}
-{'id': '04230', 'img': 'm00.png', 'descr': 'Ecssus 042 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'One Million'}
-{'id': '04330', 'img': 'm00.png', 'descr': 'Ecssus 043 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Tommy Girl'}
-{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'}
+{'id': '04030', 'img': 'm00.png', 'descr': 'Ecssus 040 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Strong Man'},
+{'id': '04130', 'img': 'm00.png', 'descr': 'Ecssus 041 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Fantasy'},
+{'id': '04230', 'img': 'm00.png', 'descr': 'Ecssus 042 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'One Million'},
+{'id': '04330', 'img': 'm00.png', 'descr': 'Ecssus 043 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Tommy Girl'},
+{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'},
 ],
 '50ml': [
 {'id': '00150', 'img': 'm00.png', 'descr': 'Ecssus 001 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Amor Amor'},
@@ -91,11 +91,11 @@ loja = {
 {'id': '03750', 'img': 'm00.png', 'descr': 'Ecssus 037 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Sense'},
 {'id': '03850', 'img': 'm00.png', 'descr': 'Ecssus 038 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'Polo Verde'},
 {'id': '03950', 'img': 'm00.png', 'descr': 'Ecssus 039 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': '212 Sexy'},
-{'id': '04050', 'img': 'm00.png', 'descr': 'Ecssus 040 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'Strong Man'}
-{'id': '04150', 'img': 'm00.png', 'descr': 'Ecssus 041 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Fantasy'}
-{'id': '04250', 'img': 'm00.png', 'descr': 'Ecssus 042 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'One Million'}
-{'id': '04350', 'img': 'm00.png', 'descr': 'Ecssus 043 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Tommy Girl'}
-{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'}
+{'id': '04050', 'img': 'm00.png', 'descr': 'Ecssus 040 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'Strong Man'},
+{'id': '04150', 'img': 'm00.png', 'descr': 'Ecssus 041 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Fantasy'},
+{'id': '04250', 'img': 'm00.png', 'descr': 'Ecssus 042 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'One Million'},
+{'id': '04350', 'img': 'm00.png', 'descr': 'Ecssus 043 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Tommy Girl'},
+{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'},
 ],
 'Unissex': [
 {'id': '00430', 'img': 'm00.png', 'descr': 'Ecssus 004 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Bvlgari Black'},
@@ -104,8 +104,8 @@ loja = {
 {'id': '00650', 'img': 'm00.png', 'descr': 'Ecssus 006 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein One'},
 {'id': '02930', 'img': 'm00.png', 'descr': 'Ecssus 029 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Nat Magic Baby - infantil'},
 {'id': '02950', 'img': 'm00.png', 'descr': 'Ecssus 029 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Nat Magic Baby - infantil'},
-{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'}
-{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'}
+{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'},
+{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'},
 ],
 'Fem' : [
 {'id': '00130', 'img': 'm00.png', 'descr': 'Ecssus 001 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Amor Amor'},
@@ -152,12 +152,12 @@ loja = {
 {'id': '03750', 'img': 'm00.png', 'descr': 'Ecssus 037 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Sense'},
 {'id': '03930', 'img': 'm00.png', 'descr': 'Ecssus 039 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': '212 Sexy'},
 {'id': '03950', 'img': 'm00.png', 'descr': 'Ecssus 039 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': '212 Sexy'},
-{'id': '04130', 'img': 'm00.png', 'descr': 'Ecssus 041 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Fantasy'}
-{'id': '04150', 'img': 'm00.png', 'descr': 'Ecssus 041 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Fantasy'}
-{'id': '04330', 'img': 'm00.png', 'descr': 'Ecssus 043 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Tommy Girl'}
-{'id': '04350', 'img': 'm00.png', 'descr': 'Ecssus 043 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Tommy Girl'}
-{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'}
-{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'}
+{'id': '04130', 'img': 'm00.png', 'descr': 'Ecssus 041 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Fantasy'},
+{'id': '04150', 'img': 'm00.png', 'descr': 'Ecssus 041 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Fantasy'},
+{'id': '04330', 'img': 'm00.png', 'descr': 'Ecssus 043 30ml', 'genero': 'Feminino ', 'valor': 45.00, 'ref': 'Tommy Girl'},
+{'id': '04350', 'img': 'm00.png', 'descr': 'Ecssus 043 50ml', 'genero': 'Feminino ', 'valor': 60.00, 'ref': 'Tommy Girl'},
+{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'},
+{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'},
 ], 
 'Masc': [
 {'id': '00230', 'img': 'm00.png', 'descr': 'Ecssus 002 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Azarro Chrome'},
@@ -202,8 +202,8 @@ loja = {
 {'id': '03850', 'img': 'm00.png', 'descr': 'Ecssus 038 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'Polo Verde'},
 {'id': '04030', 'img': 'm00.png', 'descr': 'Ecssus 040 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'Strong Man'},
 {'id': '04050', 'img': 'm00.png', 'descr': 'Ecssus 040 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'Strong Man'},
-{'id': '04230', 'img': 'm00.png', 'descr': 'Ecssus 042 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'One Million'}
-{'id': '04250', 'img': 'm00.png', 'descr': 'Ecssus 042 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'One Million'}
-{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'}
-{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'}
+{'id': '04230', 'img': 'm00.png', 'descr': 'Ecssus 042 30ml', 'genero': 'Masculino', 'valor': 45.00, 'ref': 'One Million'},
+{'id': '04250', 'img': 'm00.png', 'descr': 'Ecssus 042 50ml', 'genero': 'Masculino', 'valor': 60.00, 'ref': 'One Million'},
+{'id': '04430', 'img': 'm00.png', 'descr': 'Ecssus 044 30ml', 'genero': 'Unissex  ', 'valor': 45.00, 'ref': 'Calvin Klein Be'},
+{'id': '04450', 'img': 'm00.png', 'descr': 'Ecssus 044 50ml', 'genero': 'Unissex  ', 'valor': 60.00, 'ref': 'Calvin Klein Be'},
 ]} 

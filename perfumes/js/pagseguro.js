@@ -115,8 +115,8 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   ret += '<br />'
   ret += '<input type=button onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
   ret += '<input disabled="disabled" type=button onclick="parentNode.submit()" value="Finalizar Compra PayPal" alt="Finalizar compra! " >\n'
-  ret += '<input type="image" src="'+this.configuracoes.bntPS+'" name="submit" alt="Finalizar compra!" />\n'
-  ret += '<input type="image" src="'+this.configuracoes.bntPP+'" name="submit" alt="Finalizar compra!" />\n'
+  /*ret += '<input type="image" src="'+this.configuracoes.bntPS+'" name="submit" alt="Finalizar compra!" />\n'*/
+  /*ret += '<input type="image" src="'+this.configuracoes.bntPP+'" name="submit" alt="Finalizar compra!" />\n'*/
   ret += '</form> Sua compra garantida ou seu dinheiro de volta! <h2> </h2>'
   document.getElementById(this.configuracoes.id_carrinho).innerHTML = tabela+ret
 }

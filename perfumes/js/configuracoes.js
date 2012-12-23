@@ -33,8 +33,8 @@ configuracoes = {
   //imgBotao    : 'https://pagseguro.uol.com.br/Security/Imagens/btnComprarBR.jpg',
   //imgBotao    : 'https://pagseguro.uol.com.br/Security/Imagens/btnConcluirBR.jpg',
   imgBotao    : 'https://incolume.googlecode.com/svn/trunk/perfumes/img/btnFinalizar.jpg',
-  bntPS    : 'https://pagseguro.uol.com.br/Security/Imagens/btnConcluir.jpg',
-  bntPP    : 'https://pagseguro.uol.com.br/Security/Imagens/btnConcluir.jpg',
+  bntPS    : 'https://incolume.googlecode.com/svn/trunk/perfumes/img/120x53-comprar.gif',
+  bntPP    : 'https://incolume.googlecode.com/svn/trunk/perfumes/img/bnr_horizontal_solution_PP_166wx80h.gif',
   rmBotao    : 'https://incolume.googlecode.com/svn/trunk/perfumes/img/close.png',
 
   // Abaixo, informe o primeiro grupo a ser mostrado na loja

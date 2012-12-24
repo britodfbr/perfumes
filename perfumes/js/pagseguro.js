@@ -76,7 +76,7 @@ PagSeguro.prototype.remover = function(id) {
 PagSeguro.prototype.atualizaCarrinho = function() {
   var x=total=0
   var tabela = '<h2> Minha Compra </h2> <table><thead><th>Quantia</th><th>Descrição</th><th>Vlr Unitário</th><th>Vlr Final</th></tr></thead><tbody>'
-  var ret = '<form action="#" method="POST" target="pagseguro">\n'
+  var ret = '<form action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="POST" target="pagseguro">\n'
   ret += '<input type="hidden" name="email_cobranca" value="'+this.configuracoes.email+'" />'
   ret += '<input type="hidden" name="moeda" value="'+this.configuracoes.moeda+'" />'
   ret += '<input type="hidden" name="tipo" value="CP" />'
@@ -113,10 +113,7 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
   ret += '<input type=button onclick="window.location.reload( true );" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
   ret += '<br />'
-/*  ret += '<input type=button onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
-  ret += '<input disabled="disabled" type=button onclick="parentNode.submit()" value="Finalizar Compra PayPal" alt="Finalizar compra! " >\n'
-*/
-  ret += '<input type=button onclick="this.form.action=https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx;return false;" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
+  ret += '<input type=button onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
   ret += '<input disabled="disabled" type=button onclick="parentNode.submit()" value="Finalizar Compra PayPal" alt="Finalizar compra! " >\n'
   /*ret += '<input type="image" src="'+this.configuracoes.bntPS+'" name="submit" alt="Finalizar compra!" />\n'*/
   /*ret += '<input type="image" src="'+this.configuracoes.bntPP+'" name="submit" alt="Finalizar compra!" />\n'*/

@@ -30,7 +30,8 @@ PagSeguro.prototype.main = function(grupo, elm) {
       ret += '<dd class="imagem"><img src="'+this.configuracoes.img_base+item.img+this.configuracoes.formatoimg+'" /></dd>'
     ret += '<dd class="referencia"><span>Referência olfativa:</span> '+item.ref+'</dd>'
     ret += '<dd class="referencia"><span>Gênero:</span> '+item.genero+'</dd>'
-    ret += '<dd class="preco"><span>Preço:</span> '+this.moeda(item.valor)+'</dd>'
+    ret += '<dd class="referencia"><span>De:</span> '+item.vref+'</dd>'
+    ret += '<dd class="preco"><span>Por:</span> '+this.moeda(item.valor)+'</dd>'
     ret += '<dd class="link"><a href="#" onclick="pgs.adicionar(\''+grupo+'\', \''+item.id+'\');pgs.atualizaCarrinho();return false">Comprar</a></dd>'
     ret += '</dl>'
   }
@@ -113,10 +114,8 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
   ret += '<input type=button onclick="window.location.reload( true );" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
   ret += '<br />'
-  ret += '<input type=button onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
-  ret += '<input disabled="disabled" type=button onclick="parentNode.submit()" value="Finalizar Compra PayPal" alt="Finalizar compra! " >\n'
-  /*ret += '<input type="image" src="'+this.configuracoes.bntPS+'" name="submit" alt="Finalizar compra!" />\n'*/
-  /*ret += '<input type="image" src="'+this.configuracoes.bntPP+'" name="submit" alt="Finalizar compra!" />\n'*/
+  ret += '<input type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
+  ret += '<input disabled="disabled" type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra PayPal" alt="Finalizar compra! " >\n'
   ret += '</form> Sua compra garantida ou seu dinheiro de volta! <h2> </h2>'
   document.getElementById(this.configuracoes.id_carrinho).innerHTML = tabela+ret
 }

@@ -39,9 +39,11 @@ configuracoes = {
 
 /* Logo pagseguro*/
   logops: 'https://lh3.googleusercontent.com/-ptPKPMJwUVM/UNMfzHtPD1I/AAAAAAAACl8/1fjLX1EiaL0/s144/novo-novo-logo-ps-1352153644117_266x66.gif',
+  logopsBlack: 'https://lh4.googleusercontent.com/-A46-Eh3QyyQ/UNtLgJUobgI/AAAAAAAACnw/H7b413ACqBc/s144/novo-novo-logo-ps-1352153644117_266x66_black.gif',
 
 /* Logo paypal*/
   logopp: 'https://lh4.googleusercontent.com/-NBdOz-5RXFc/UNrq036ieBI/AAAAAAAACnM/GCl3mTbhaxY/s144/paypal_logo.gif',
+  logoppBlack: 'https://lh6.googleusercontent.com/-Hq-R3LS5HFM/UNtLLFw2XsI/AAAAAAAACnk/OLlgPGcYE7E/s144/paypal_logo_black.gif',
 
   // Abaixo, informe o primeiro grupo a ser mostrado na loja
   // Não se esqueça! Este valor é case-sensitive, ou seja Maiúsculas é diferente de MAIÚSCULAS

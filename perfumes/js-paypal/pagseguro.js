@@ -77,7 +77,7 @@ PagSeguro.prototype.remover = function(id) {
 PagSeguro.prototype.atualizaCarrinho = function() {
   var x=total=0
   var tabela = '<h2> Minha Compra </h2> <table><thead><th>Quantia</th><th>Descrição</th><th>Vlr Unitário</th><th>Vlr Final</th></tr></thead><tbody>'
-  var ret = '<form method="POST" target="">\n'
+  var ret = '<form action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="POST" target="pagseguro">\n'
   ret += '<input type="hidden" name="email_cobranca" value="'+this.configuracoes.email+'" />'
   ret += '<input type="hidden" name="moeda" value="'+this.configuracoes.moeda+'" />'
   ret += '<input type="hidden" name="tipo" value="CP" />'
@@ -114,12 +114,13 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
   ret += '<input type=button onclick="window.location.reload( true );" style="cursor:pointer" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
   ret += '<br />'
-  //ret += '<input type=button onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
-  //ret += '<input disabled="disabled" type=button onclick="parentNode.submit()" value="Finalizar Compra PayPal" alt="Finalizar compra! " >\n'
-  ret += '<input type=button onclick="javascript: formSubmitPS(this.form)" style="cursor:pointer" value="Finalizar Com PagSeguro" alt="Finalizar compra! " >\n'
-  ret += '<input type=button onclick="javascript: formSubmitPP(this.form)" style="cursor:pointer" Value="Finalizar Com PayPal" alt="Finalizar compra! " >\n'
-  /*ret += '<input type="image" src="'+this.configuracoes.bntPS+'" name="submit" alt="Finalizar compra!" />\n'*/
-  /*ret += '<input type="image" src="'+this.configuracoes.bntPP+'" name="submit" alt="Finalizar compra!" />\n'*/
+
+  ret += '<p><b>Selecione o meio de finalizar sua compra:</b></p>'
+  ret += '<p><INPUT TYPE="radio" NAME="pay" VALUE="PS" CHECKED onClick="formSubmitPS(this.form)">Pagseguro'
+  ret += '<INPUT TYPE="radio" NAME="pay" VALUE="PP" onClick="formSubmitPP(this.form)">PayPal</p>'
+  ret += '<input type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
+/*
+*/
   ret += '</form> Sua compra garantida ou seu dinheiro de volta! <h2> </h2>'
   document.getElementById(this.configuracoes.id_carrinho).innerHTML = tabela+ret
 }
@@ -139,10 +140,10 @@ window.onload=function() {
 function formSubmitPS(form){
     form.action = "https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx";
     form.target = "pagseguro";
-    document.form.submit();
+//    document.form.submit();
 }
 function formSubmitPP(form){
     form.action = "https://www.paypal.com/cgi-bin/webscr";
     form.target = "pagseguro";
-    document.form.submit();
+//    document.form.submit();
 }

@@ -135,15 +135,15 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   ret += '<p style="color:#f00" ><b>Selecione o meio de finalizar sua compra:</b></p>'
   ret +='<p>'
   ret += '<INPUT TYPE="radio" NAME="pay" VALUE="PS" CHECKED style="cursor:pointer" onClick="formSubmitPS(this.form)">'
-  ret += ''
-  ret += '<img src="'+this.configuracoes.logops+'" height="36" width="144" alt="PagSeguro" />'
-  ret += ''
+  ret += '<span name=slogops >'
+  ret += '<img name="logops" src="'+this.configuracoes.logops+'" height="36" width="144" alt="PagSeguro" onClick="formSubmitPS(this.form)" />'
+  ret += '</span>'
   ret +='</p>'
   ret +='<p>'
   ret += '<INPUT TYPE="radio" NAME="pay" VALUE="PP" style="cursor:pointer" onClick="formSubmitPP(this.form)">'
-  ret += ''
-  ret += '<img src="'+this.configuracoes.logopp+'" height="36" width="144" alt="PayPal" />'
-  ret += ''
+  ret += '<span name=slogopp >'
+  ret += '<img name="logopp" src="'+this.configuracoes.logoppBlack+'" height="36" width="144" alt="PayPal" onClick="formSubmitPS(this.form)" />'
+  ret += '</span>'
   ret +='</p>'
   ret += '<input type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra" alt="Finalizar compra! " >\n'
   ret += '<p><br /></p>'
@@ -168,12 +168,15 @@ window.onload=function() {
 function formSubmitPS(form){
     form.action = "https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx";
     form.target = "pagseguro";
-//    document.form.submit();
-    form.pay[PS].checked
+    form.pay[0].checked;
+    form.logopp.src = this.configuracoes.logops;
+    document.logops.src = this.configuracoes.logops;
+    document.logopp.src = this.configuracoes.logoppBlack;
 }
 function formSubmitPP(form){
     form.action = "https://www.paypal.com/cgi-bin/webscr";
     form.target = "pagseguro";
-//    document.form.submit();
-    form.pay[PP].checked
+    form.pay[1].checked
+    document.logops.src = this.configuracoes.logopsBlack;
+    document.logopp.src = this.configuracoes.logopp;
 }

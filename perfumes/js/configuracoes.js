@@ -37,6 +37,12 @@ configuracoes = {
   bntPP    : 'https://incolume.googlecode.com/svn/trunk/perfumes/img/bnr_horizontal_solution_PP_166wx80h.gif',
   rmBotao    : 'https://incolume.googlecode.com/svn/trunk/perfumes/img/close.png',
 
+/* Logo pagseguro*/
+  logops: 'https://lh3.googleusercontent.com/-ptPKPMJwUVM/UNMfzHtPD1I/AAAAAAAACl8/1fjLX1EiaL0/s144/novo-novo-logo-ps-1352153644117_266x66.gif',
+
+/* Logo paypal*/
+  logopp: 'https://lh4.googleusercontent.com/-NBdOz-5RXFc/UNrq036ieBI/AAAAAAAACnM/GCl3mTbhaxY/s144/paypal_logo.gif',
+
   // Abaixo, informe o primeiro grupo a ser mostrado na loja
   // Não se esqueça! Este valor é case-sensitive, ou seja Maiúsculas é diferente de MAIÚSCULAS
   inicio     : '50ml'

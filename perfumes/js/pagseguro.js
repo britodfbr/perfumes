@@ -78,12 +78,18 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   var x=total=0
   var tabela = '<h2> Minha Compra </h2> <table><thead><th>Quantia</th><th>Descrição</th><th>Vlr Unitário</th><th>Vlr Final</th></tr></thead><tbody>'
   var ret = '<form action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="POST" target="pagseguro">\n'
+/*variáveis pagseguro*/
   ret += '<input type="hidden" name="email_cobranca" value="'+this.configuracoes.email+'" />'
   ret += '<input type="hidden" name="moeda" value="'+this.configuracoes.moeda+'" />'
   ret += '<input type="hidden" name="tipo" value="CP" />'
   ret += '<input type="hidden" name="extra" value="1" />'
   ret += '<input type="hidden" name="encoding" value="utf-8" />'
 
+/*variáveis paypal*/
+  ret += '<input type="hidden" name="cmd" value="_cart" />'
+  ret += '<input type="hidden" name="upload" value="1" />'
+  ret += '<input type="hidden" name="business" value="'+this.configuracoes.email+'" />'
+  ret += '<input type="hidden" name="currency_code" value="'+this.configuracoes.moeda+'" />'
 
   for (i in this.carrinho) {
     if (this.carrinho[i]==undefined || this.carrinho[i].descr==undefined) continue
@@ -91,16 +97,27 @@ PagSeguro.prototype.atualizaCarrinho = function() {
     if (this.configuracoes.peso)
       ret += '<input type="hidden" name="item_peso_'+x+'" value="'+pgs.valor(this.configuracoes.peso)+'" />'
   
-    if (this.configuracoes.frete)
+    if (this.configuracoes.frete){
       ret += '<input type="hidden" name="item_frete_'+x+'" value="'+pgs.valor(this.configuracoes.frete)+'" />'
-  
+      //ret += '<input type="hidden" name="shipping_'+x'" value="'+pgs.valor(this.configuracoes.frete)+'" />'
+    ret += '<input type="hidden" name="shipping_'+x+'" value="'+this.configuracoes.frete+'" />\n'
+    ret += '<input type="hidden" name="shipping2_'+x+'" value="'+this.configuracoes.frete+'" />\n'
+    ret += '<input type="hidden" name="handling_'+x+'" value="'+this.configuracoes.frete+'" />\n'
+    }
+
     if (this.configuracoes.tipofrete)
       ret += '<input type="hidden" name="item_tipo_frete" value="'+this.configuracoes.tipofrete+'" />'
 
+/*variáveis pagseguro*/
     ret += '<input type="hidden" name="item_id_'+x+'" value="'+this.carrinho[i].id+'"  />\n'
     ret += '<input type="hidden" name="item_descr_'+x+'" value="'+this.carrinho[i].descr+'"  />\n'
     ret += '<input type="hidden" name="item_valor_'+x+'" value="'+pgs.valor(this.carrinho[i].valor)+'"  />\n'
     ret += '<input type="hidden" name="item_quant_'+x+'" value="'+this.carrinho[i].quant+'"  />\n'
+
+/*variáveis paypal*/
+    ret += '<input type="hidden" name="item_name_'+x+'" value="'+this.carrinho[i].descr+'" />\n'
+    ret += '<input type="hidden" name="amount_'+x+'" value="'+this.carrinho[i].valor+'" />\n'
+    ret += '<input type="hidden" name="quantity_'+x+'" value="'+this.carrinho[i].quant+'" />\n'
 
     if (this.carrinho[i].peso && !this.configuracoes.peso)
       ret += '<input type="hidden" name="item_peso_'+x+'" value="'+pgs.valor(this.carrinho[i].peso)+'"  />\n'
@@ -112,11 +129,17 @@ PagSeguro.prototype.atualizaCarrinho = function() {
     total+=this.carrinho[i].quant*this.carrinho[i].valor
   }
   tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
-  ret += '<input type=button onclick="window.location.reload( true );" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
-  ret += '<br />'
-  ret += '<input type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra PagSeguro" alt="Finalizar compra! " >\n'
-  ret += '<input disabled="disabled" type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra PayPal" alt="Finalizar compra! " >\n'
-  ret += '</form> Sua compra garantida ou seu dinheiro de volta! <h2> </h2>'
+  ret += '<input type=button onclick="window.location.reload( true );" style="cursor:pointer" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
+  ret += '<p><br /></p>'
+
+  ret += '<p style="color:#f00" ><b>Selecione o meio de finalizar sua compra:</b></p>'
+  ret += '<p><INPUT TYPE="radio" NAME="pay" VALUE="PS" CHECKED onClick="formSubmitPS(this.form)"><img src="https://lh3.googleusercontent.com/-ptPKPMJwUVM/UNMfzHtPD1I/AAAAAAAACl8/1fjLX1EiaL0/s144/novo-novo-logo-ps-1352153644117_266x66.gif" height="36" width="144" alt="PagSeguro" />'
+  ret += '<INPUT TYPE="radio" NAME="pay" VALUE="PP" onClick="formSubmitPP(this.form)"><img src="https://lh4.googleusercontent.com/-NBdOz-5RXFc/UNrq036ieBI/AAAAAAAACnM/GCl3mTbhaxY/s144/paypal_logo.gif" height="36" width="144" alt="PayPal" /></p>'
+  ret += '<input type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra" alt="Finalizar compra! " >\n'
+  ret += '<p><br /></p>'
+/*
+*/
+  ret += '</form> <h2>Sua compra garantida ou seu dinheiro de volta! </h2>'
   document.getElementById(this.configuracoes.id_carrinho).innerHTML = tabela+ret
 }
 
@@ -130,4 +153,15 @@ PagSeguro.prototype.valor = function(valor) {
 
 window.onload=function() {
   pgs=new PagSeguro(configuracoes, loja)
+}
+
+function formSubmitPS(form){
+    form.action = "https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx";
+    form.target = "pagseguro";
+//    document.form.submit();
+}
+function formSubmitPP(form){
+    form.action = "https://www.paypal.com/cgi-bin/webscr";
+    form.target = "pagseguro";
+//    document.form.submit();
 }

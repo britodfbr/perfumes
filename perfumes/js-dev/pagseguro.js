@@ -100,6 +100,9 @@ PagSeguro.prototype.atualizaCarrinho = function() {
     if (this.configuracoes.frete){
       ret += '<input type="hidden" name="item_frete_'+x+'" value="'+pgs.valor(this.configuracoes.frete)+'" />'
       //ret += '<input type="hidden" name="shipping_'+x'" value="'+pgs.valor(this.configuracoes.frete)+'" />'
+    ret += '<input type="hidden" name="shipping_'+x+'" value="'+this.configuracoes.frete+'" />\n'
+    ret += '<input type="hidden" name="shipping2_'+x+'" value="'+this.configuracoes.frete+'" />\n'
+    ret += '<input type="hidden" name="handling_'+x+'" value="'+this.configuracoes.frete+'" />\n'
     }
 
     if (this.configuracoes.tipofrete)
@@ -127,15 +130,16 @@ PagSeguro.prototype.atualizaCarrinho = function() {
   }
   tabela+='</tbody><tfoot><tr><th colspan="3">Total</th><th colspan="2">'+pgs.moeda(total)+'</th></tr></tfoot></table>'
   ret += '<input type=button onclick="window.location.reload( true );" style="cursor:pointer" value="Limpar Todos" alt="Limpar todos os itens da compra! :( " >'
-  ret += '<br />'
+  ret += '<p><br /></p>'
 
-  ret += '<p><b>Selecione o meio de finalizar sua compra:</b></p>'
-  ret += '<p><INPUT TYPE="radio" NAME="pay" VALUE="PS" CHECKED onClick="formSubmitPS(this.form)">Pagseguro'
-  ret += '<INPUT TYPE="radio" NAME="pay" VALUE="PP" onClick="formSubmitPP(this.form)">PayPal</p>'
+  ret += '<p style="color:#f00" ><b>Selecione o meio de finalizar sua compra:</b></p>'
+  ret += '<p><INPUT TYPE="radio" NAME="pay" VALUE="PS" CHECKED onClick="formSubmitPS(this.form)"><img src="https://lh3.googleusercontent.com/-ptPKPMJwUVM/UNMfzHtPD1I/AAAAAAAACl8/1fjLX1EiaL0/s144/novo-novo-logo-ps-1352153644117_266x66.gif" height="36" width="144" alt="PagSeguro" />'
+  ret += '<INPUT TYPE="radio" NAME="pay" VALUE="PP" onClick="formSubmitPP(this.form)"><img src="https://lh4.googleusercontent.com/-NBdOz-5RXFc/UNrq036ieBI/AAAAAAAACnM/GCl3mTbhaxY/s144/paypal_logo.gif" height="36" width="144" alt="PayPal" /></p>'
   ret += '<input type=button style="cursor:pointer" onclick="parentNode.submit()" value="Finalizar Compra" alt="Finalizar compra! " >\n'
+  ret += '<p><br /></p>'
 /*
 */
-  ret += '</form> Sua compra garantida ou seu dinheiro de volta! <h2> </h2>'
+  ret += '</form> <h2>Sua compra garantida ou seu dinheiro de volta! </h2>'
   document.getElementById(this.configuracoes.id_carrinho).innerHTML = tabela+ret
 }
 

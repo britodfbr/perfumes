@@ -1,5 +1,5 @@
 function ecssusListShow(){
-/*document.write("Copyright Jennifer Kyrnin 1992");*/
+/*document.write("(C) Incolume.com 2010");*/
 document.write("Ecssus #01 &#8212; feminino &#8212;  Amor Amor<br />"); 
 document.write("Ecssus #02 &#8212; masculino &#8212; Azarro Chrome<br />"); 
 document.write("Ecssus #03 &#8212; feminino &#8212;  Anais Anais<br />"); 

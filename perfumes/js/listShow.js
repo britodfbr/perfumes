@@ -1,4 +1,4 @@
-function ecssusListShowi2013(){
+function ecssusListShow2013(){
 /*document.write("(C) Incolume.com 2010");*/
 document.write("Ecssus #01 &#8212; Feminino &#8212; Amor Amor  <br />");
 document.write("Ecssus #02 &#8212; Masculino &#8212; Azarro Chrome  <br />");

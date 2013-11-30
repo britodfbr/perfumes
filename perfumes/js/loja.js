@@ -190,7 +190,7 @@ loja = {
 {'id': '01450', 'img': 'm00.png', 'descr': 'Ecssus 014 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'Ferrari Red'},
 {'id': '01650', 'img': 'm00.png', 'descr': 'Ecssus 016 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'Hugo Boss'},
 {'id': '01850', 'img': 'm00.png', 'descr': 'Ecssus 018 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'Joop Night Flight'},
-{'id': '02050', 'img': 'm00.png', 'descr': 'Ecssus 020 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'Kouros' },
+{'id': '02050', 'img': 'm00.png', 'descr': 'Ecssus 020 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'Kouros'},
 {'id': '02250', 'img': 'm00.png', 'descr': 'Ecssus 022 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'Kouros Fraugher'},
 {'id': '02450', 'img': 'm00.png', 'descr': 'Ecssus 024 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'Le Malle'},
 {'id': '02650', 'img': 'm00.png', 'descr': 'Ecssus 026 50ml', 'genero': 'Masculino', 'vref': 'R$ 70,00', 'valor': 70.00, 'ref': 'XS Black'},

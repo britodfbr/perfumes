@@ -1,10 +1,10 @@
 loja = {
 'Acessórios': [
-{'id':      'dourado', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18',50, 'valor': 15.00, 'ref':'n/a', 'descr':  'Porta Perf Dourado'},
-{'id':     'prateado', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18',50, 'valor': 15.00, 'ref':'n/a', 'descr': 'Porta Perf Prateado'},
-{'id':        'preto', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18',50, 'valor': 15.00, 'ref':'n/a', 'descr':    'Porta Perf Preto'},
-{'id':     'vermelho', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18',50, 'valor': 15.00, 'ref':'n/a', 'descr': 'Porta Perf Vermelho'},
-{'id': 'red decorado', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18',50, 'valor': 15.00, 'ref':'n/a', 'descr': 'Porta Perf Vermelho decorado'},
+{'id':      'dourado', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18,50', 'valor': 15.00, 'ref':'n/a', 'descr':  'Porta Perf Dourado'},
+{'id':     'prateado', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18,50', 'valor': 15.00, 'ref':'n/a', 'descr': 'Porta Perf Prateado'},
+{'id':        'preto', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18,50', 'valor': 15.00, 'ref':'n/a', 'descr':    'Porta Perf Preto'},
+{'id':     'vermelho', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18,50', 'valor': 15.00, 'ref':'n/a', 'descr': 'Porta Perf Vermelho'},
+{'id': 'red decorado', 'img': 'm00.png', 'genero': 'Unissex  ', 'vref': 'R$ 18,50', 'valor': 15.00, 'ref':'n/a', 'descr': 'Porta Perf Vermelho decorado'},
 ]',
 '30ml': [
 {'id': '00130', 'img': 'm00.png', 'descr': 'Ecssus 001 30ml', 'genero': 'Feminino ',	 'vref': 'R$ 55,00', 'valor': 55.00, 'ref': 'Amor Amor' },

@@ -28,10 +28,11 @@ PagSeguro.prototype.main = function(grupo, elm) {
     ret += '<dt>'+item.descr+'</dt>'
     if (this.configuracoes.imagem)
       ret += '<dd class="imagem"><img src="'+this.configuracoes.img_base+item.img+this.configuracoes.formatoimg+'" /></dd>'
-    ret += '<dd class="referencia"><span>Referência olfativa:</span> '+item.ref+'</dd>'
+    ret += '<dd class="referencia"><span>Referência olfativa:</span> <b>'+item.ref+'</b></dd>'
     ret += '<dd class="referencia"><span>Gênero:</span> '+item.genero+'</dd>'
+    ret += '<dd class="referencia"><span>Volume:</span> <b>'+item.vol+'</b></dd>'
     ret += '<dd class="referencia"><span>De:</span> '+item.vref+'</dd>'
-    ret += '<dd class="preco"><span>Por:</span> '+this.moeda(item.valor)+'</dd>'
+    ret += '<dd class="preco"><span>Por:</span> <b>'+this.moeda(item.valor)+'</b></dd>'
     ret += '<dd class="link"><a href="#" onclick="pgs.adicionar(\''+grupo+'\', \''+item.id+'\');pgs.atualizaCarrinho();return false">Comprar</a></dd>'
     ret += '</dl>'
   }
@@ -54,6 +55,7 @@ PagSeguro.prototype.adicionar = function(grupo, id) {
   this.carrinho[item.id] = {
     'id'    : item.id,
     'descr' : item.descr,
+    'volume' : item.vol,
     'valor' : item.valor,
     'quant' : 1
   }
